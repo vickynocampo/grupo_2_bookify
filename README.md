@@ -18,4 +18,4 @@ Alberto Fernandez: jafernandezar@gmail.com
 
 Sebastian Bente Di Giambattista: sebasbentedg@gmail.com
 
-Nicolás Leandro Agüero: nicocoqui88@gmail.com
+Nicolás Leandro Agüero: nicocoqui88@gmail.com, estudiante de programacion web full stack, estudiante de idioma japones, amigo de la tecnologia y amante de los animales y de ver animes.
