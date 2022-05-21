@@ -1,12 +1,15 @@
-Bookyfy:
-
-Repositorio git: https://github.com/vickynocampo/grupo_2_bookyfy.git
+Bookyfy
 
 Tematica del sitio: Una libreria online que comercializa textos de los principales generos de consumo masivo de presentacion tanto fisica como virtual o auditiva.
 
 Publico objetivo: Apuntamos al publico en general, de todas las demografias, contando como usuarios legitimos unicamente a aquellos mayores de 16 años, con capacidad de compra legal. Con un alcanze de nivel nacional.
 
-5 referentes: https://www.tematika.com , https://www.cuspide.com/ , https://es.scribd.com/ , https://www.barnesandnobleinc.com/ , https://www.audible.com , https://www.penguinlibros.com/
+5 referentes:
+https://www.tematika.com
+https://www.cuspide.com/
+https://www.barnesandnobleinc.com/
+https://www.audible.com
+https://www.penguinlibros.com/
 
 Descripcion de integrantes:
 
