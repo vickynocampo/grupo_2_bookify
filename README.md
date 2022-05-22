@@ -1,6 +1,6 @@
 Bookyfy
 
-Bookyfy es un proyecto en desarrollo para la creacion de un Marketplace que comercializará a nivel Nacional libros de texto de consumo masivo de grandes editoriales en formato papel, audio y digital.
+Es un proyecto en desarrollo para la creacion de un Marketplace que comercializará a nivel nacional libros de texto de consumo masivo de grandes editoriales en formato papel, audio y digital.
 Se apunta al publico en general, mayor de 18 años.
 
 Marketplaces de referencia: 
