@@ -1,10 +1,10 @@
 Bookyfy
 
-Tematica del sitio: Una libreria online que comercializa textos de los principales generos de consumo masivo de presentacion tanto fisica como virtual o auditiva.
+Bookyfy es un proyecto en desarrollo para la creacion de un Marketplace que comercializará a nivel Nacional libros de texto de consumo masivo de grandes editoriales en formato papel, audio y digital.
+Se apunta al publico en general, mayor de 18 años.
 
-Publico objetivo: Apuntamos al publico en general, de todas las demografias, contando como usuarios legitimos unicamente a aquellos mayores de 16 años, con capacidad de compra legal. Con un alcanze de nivel nacional.
+Marketplaces de referencia: 
 
-5 referentes:
 https://www.tematika.com
 https://www.cuspide.com/
 https://www.barnesandnobleinc.com/
@@ -13,7 +13,7 @@ https://www.penguinlibros.com/
 
 Descripcion de integrantes:
 
-Victoria Navarro Ocampo: vickynocampo@hotmail.com
+Victoria Navarro Ocampo: Data Analyst, estudiante de Desarrollo Web Full Stack - https://www.linkedin.com/in/victoria-navarro-ocampo
 
 Eleazar Salazar: eleazarsv93@gmail.com
 
