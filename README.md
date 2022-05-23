@@ -18,7 +18,9 @@ https://www.penguinlibros.com/
 
 3- Descripcion de Colaboradores:
 
-Victoria Navarro Ocampo: Data Analyst, estudiante de Desarrollo Web Full Stack - https://www.linkedin.com/in/victoria-navarro-ocampo
+Victoria Navarro Ocampo: Data Analyst, estudiante de Desarrollo Web Full Stack 
+email: vickynocampo@hotmail.com
+linkedin: https://www.linkedin.com/in/victoria-navarro-ocampo
 
 Eleazar Salazar: Quality Control, estudiante de Desarrollo Web Full Stack
 email: eleazarsv93@gmail.com
