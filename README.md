@@ -28,6 +28,8 @@ linkedin: https://www.linkedin.com/in/eleazar-salazar-tester-qa/
 
 Alberto Fernandez: jafernandezar@gmail.com
 
-Sebastian Bente Di Giambattista: sebasbentedg@gmail.com
+Sebastian Alberto Bente Di Giambattista: Docente, estudiante de Desarrollo Web Full Stack 
+email: sebasbentedg@gmail.com
+linkedin: https://www.linkedin.com/in/sebasti%C3%A1n-bente-4b5360228/
 
 Nicolás Leandro Agüero: nicocoqui88@gmail.com, estudiante de programacion web full stack, estudiante de idioma japones, amigo de la tecnologia y amante de los animales y de ver animes.
