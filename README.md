@@ -1,9 +1,14 @@
-Bookyfy
+## Tabla de Contenido
+1. Informacion General 
+2. Marketplaces de Referencia
+3. Descripción de Colaboradores
 
-Es un proyecto en desarrollo para la creacion de un Marketplace que comercializará a nivel nacional libros de texto de consumo masivo de grandes editoriales en formato papel, audio y digital.
+1- Información General - 
+
+Bookyfy es un proyecto en desarrollo para la creacion de un Marketplace que comercializará a nivel nacional libros de texto de consumo masivo de grandes editoriales en formato papel, audio y digital.
 Se apunta al publico en general, mayor de 18 años.
 
-Marketplaces de referencia: 
+2- Marketplaces de referencia: 
 
 https://www.tematika.com
 https://www.cuspide.com/
@@ -11,11 +16,13 @@ https://www.barnesandnobleinc.com/
 https://www.audible.com
 https://www.penguinlibros.com/
 
-Descripcion de integrantes:
+3- Descripcion de Colaboradores:
 
 Victoria Navarro Ocampo: Data Analyst, estudiante de Desarrollo Web Full Stack - https://www.linkedin.com/in/victoria-navarro-ocampo
 
-Eleazar Salazar: eleazarsv93@gmail.com
+Eleazar Salazar: Quality Control, estudiante de Desarrollo Web Full Stack
+email: eleazarsv93@gmail.com
+linkedin: https://www.linkedin.com/in/eleazar-salazar-tester-qa/
 
 Alberto Fernandez: jafernandezar@gmail.com
 
