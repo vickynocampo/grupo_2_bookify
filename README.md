@@ -32,4 +32,5 @@ Sebastian Alberto Bente Di Giambattista: Docente, estudiante de Desarrollo Web F
 email: sebasbentedg@gmail.com
 linkedin: https://www.linkedin.com/in/sebasti%C3%A1n-bente-4b5360228/
 
-Nicolás Leandro Agüero: nicocoqui88@gmail.com, estudiante de programacion web full stack, estudiante de idioma japones, amigo de la tecnologia y amante de los animales y de ver animes.
+Nicolás Leandro Agüero: Estudiante de programacion web full stack, estudiante de idioma japones, amigo de la tecnologia y amante de los animales.
+email: nicocoqui88@gmail.com
