@@ -26,7 +26,9 @@ Eleazar Salazar: Quality Control, estudiante de Desarrollo Web Full Stack
 email: eleazarsv93@gmail.com
 linkedin: https://www.linkedin.com/in/eleazar-salazar-tester-qa/
 
-Alberto Fernandez: jafernandezar@gmail.com
+Jose Alberto Fernandez: Lic.Sistemas de Infromacion, estudiante de Desarrollo Web Full Stack 
+email:jafernandezar@gmail.com
+linkedin: https://www.linkedin.com/in/alberto-fernandez-89b447107/
 
 Sebastian Alberto Bente Di Giambattista: Docente, estudiante de Desarrollo Web Full Stack 
 email: sebasbentedg@gmail.com
