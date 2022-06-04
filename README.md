@@ -36,3 +36,6 @@ linkedin: https://www.linkedin.com/in/sebasti%C3%A1n-bente-4b5360228/
 
 Nicolás Leandro Agüero: Estudiante de programacion web full stack, estudiante de idioma japones, amigo de la tecnologia y amante de los animales.
 email: nicocoqui88@gmail.com
+
+4. Tablero de Trabajo Trello:
+https://trello.com/proyectointegradorgrupo02
