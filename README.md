@@ -2,6 +2,7 @@
 1. Informacion General 
 2. Marketplaces de Referencia
 3. Descripción de Colaboradores
+4. Tablero de Trabajo
 
 1- Información General - 
 
