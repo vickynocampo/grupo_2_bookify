@@ -1,0 +1,27 @@
+{
+  "name": "bookify",
+  "version": "1.0.0",
+  "description": "1. Informacion General \r 2. Marketplaces de Referencia\r 3. Descripción de Colaboradores",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickynocampo/bookyfy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickynocampo/bookyfy/issues"
+  },
+  "homepage": "https://github.com/vickynocampo/bookyfy#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
