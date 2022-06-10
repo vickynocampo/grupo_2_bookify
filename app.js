@@ -11,5 +11,5 @@ app.get("/productCart",(req, res)=>{res.sendFile(path.resolve(__dirname, "./view
 app.get("/register",(req, res)=>{res.sendFile(path.resolve(__dirname, "./views/register.html"))});
 app.get("/login",(req, res)=>{res.sendFile(path.resolve(__dirname, "./views/login.html"))});
 
-app.listen(3035,()=>{console.log("Servidor corriendo en puerto 3030");})
+app.listen(3030,()=>{console.log("Servidor corriendo en puerto 3030");})
 
