@@ -1,0 +1,89 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(204, 204, 204);
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+    background-color: #FCA970;
+}
+
+.top-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact, .account {
+    margin: 5px 10px 0 0;
+    font-weight: bold;
+    color: #fcfcfc;
+    font-size: 1.1rem;
+}
+
+.top-header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fcfcfc;
+    font-size: 1.1rem;
+} 
+
+.separator {
+    display: inline;
+}
+
+.main-header {
+    display: flex;
+    position: relative;
+}
+
+.main-header img {
+    width: 60%;
+    height: 60%;
+}
+
+.cart {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
+
+.cart-icon { 
+    font-size: 3.5rem;
+    color: rgb(90, 84, 84);
+}
+
+.slogan {
+    font-style: italic;
+    font-weight: bold;
+    color: #fcfcfc;
+    font-size: 1.4rem;
+}
+
+.bottom-header {
+    display: flex;
+}
+
+.bm {
+    width: 15%;
+}
+ 
+.search {
+    width: 80%;
+}
+
+.bm-icon {
+    color: white;
+}
+
+.search {
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.search-bar {
+    width: 90%;
+}
+
