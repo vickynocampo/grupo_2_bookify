@@ -68,6 +68,9 @@ header {
 
 .bm {
     width: 15%;
+    display: block;
+    margin: auto;
+    text-align: center;
 }
  
 .search {
