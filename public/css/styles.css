@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: rgb(204, 204, 204);
+    background-color: white;
     font-family: 'Barlow', sans-serif;
     min-width: 300px;
     max-width: 1200px;
@@ -16,7 +16,8 @@ body {
 }
 
 header {
-    background-color: #FCA970;
+    background-color: #D9D9D9;
+    width: 100%;
 }
 
 .top-header {
@@ -49,7 +50,10 @@ header {
 
 .main-header img {
     width: 200px;
-    height: 100px%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
 .cart {
@@ -66,12 +70,15 @@ header {
 .slogan {
     font-style: italic;
     font-weight: bold;
-    color: #fcfcfc;
+    color: #FF7F27;
     font-size: 1.4rem;
+    margin-top: 1%;
+    margin-left: 2%;
 }
 
 .bottom-header {
     display: flex;
+    padding-bottom: 3%;
 }
 
 .bm {
@@ -79,23 +86,42 @@ header {
     display: block;
     margin: auto;
     text-align: center;
+    color: #FF7F27;
+    border: none;
+    padding: 5px;
+    background-color: none;
+    font-size: 1.5rem;
+
 }
  
 .search {
     width: 80%;
-}
-
-.bm-icon {
-    color: white;
-}
-
-.search {
     display: flex;
-    margin-bottom: 4%;
+    margin-bottom: auto
+}
+
+.contact a{
+    color: black;
+}
+
+.account a{
+    color: #FF7F27;
 }
 
 .search-bar {
-    width: 90%;
+    width: 80%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 4%;
+}
+
+.search button{
+    border: none;
+    background-color: #FFF;
+    color: #666;
+    border-radius: 0px 5px 5px 0px;
+    padding: 4%;
+    font-size: 12px;
 }
 
 main {
@@ -105,13 +131,14 @@ main {
 footer {
     display: flex;
     flex-direction: column;
+    background-color: #D9D9D9;
 }
 
 footer h3 {
     width: 100%;
     text-align: center;
-    font-size: 1.4rem;
-    color: violet;
+    color: #eb1377;
+    font-size: 1.8rem;
 }
 
 .img-media img {
@@ -153,6 +180,7 @@ footer h3 {
     margin: auto;
     align-items: center;
     margin-bottom: 15px;
+    
 }
 
 .img-payment-botton {
