@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #FFFFFF;
     font-family: 'Barlow', sans-serif;
     min-width: 300px;
     max-width: 1200px;
@@ -28,19 +28,23 @@ header {
 .contact, .account {
     margin: 5px 10px 0 0;
     font-weight: bold;
-    color: #fcfcfc;
     font-size: 1.1rem;
 }
 
 .top-header a {
     text-decoration: none;
     font-weight: bold;
-    color: #fcfcfc;
     font-size: 1.1rem;
 } 
 
-.separator {
+.separator-account {
     display: inline;
+    color: #FF7F27;
+}
+
+.separator-contact {
+    display: inline;
+    color: #000000;
 }
 
 .main-header {
@@ -49,11 +53,12 @@ header {
 }
 
 .main-header img {
-    width: 200px;
+    width: 190px;
     height: 100%;
     border-radius: 10px;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 .cart {
@@ -91,7 +96,6 @@ header {
     padding: 5px;
     background-color: none;
     font-size: 1.5rem;
-
 }
  
 .search {
@@ -139,11 +143,12 @@ footer h3 {
     text-align: center;
     color: #eb1377;
     font-size: 1.8rem;
+    margin-bottom: 5px;
 }
 
 .img-media img {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
 }
 
 .media {
@@ -155,10 +160,10 @@ footer h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
     max-width: 180px;
     margin: auto;
-
+    margin-top: 8px;
 }
 
 .payment {
@@ -173,17 +178,17 @@ footer h3 {
     justify-content: space-around;
     width: 60%;
     margin: auto;
+    margin-top: 8px;
 }
 
 .img-payment-top {
     display: flex;
     margin: auto;
     align-items: center;
-    margin-bottom: 15px;
-    
+    margin-bottom: 5px;
 }
 
-.img-payment-botton {
+.img-payment-bottom {
     display: flex;
     margin: auto;
     align-items: center;
@@ -192,28 +197,22 @@ footer h3 {
 
 footer p {
     text-align: center;
+    font-size: 1.3rem;
+    margin:10px;
 }
+
 footer a {
     color: black;
     text-decoration: none;
 }
 
-.catalogue {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.my-account {
-    
-}
 
 .footer-contact {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .data-fiscal {
-    width: 30%;
+    width: 25%;
     margin: auto;
 }
 
@@ -223,9 +222,64 @@ footer a {
 }
 
 .img-data {
-    padding: 5px;
+    padding: 8px;
 }
 
-.copyright {
-    
+.copyright p {
+     font-size: 0.8rem;
+     margin: 2px;
 }
+
+
+/* @media (min-width:361px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .media, .payment, .catalogue, .my-account, .footer-contact  {
+        width: 20%;
+        min-width: 105px;
+        margin-bottom: 0;
+    }
+
+    .img-media {
+        width: 70%;
+    }
+    .img-media img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .img-payment {
+    width: 100%;
+    }
+
+    .copyright {
+        margin: auto;
+    }
+
+    .top-footer {
+        display: flex;
+        width: 100%;
+    }
+
+    .bottom-footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+    }
+
+    .copyright {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .data-fiscal { 
+        border: solid red;
+        width: 10%;
+    }
+}
+*/
