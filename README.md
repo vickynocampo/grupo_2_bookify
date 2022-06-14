@@ -3,6 +3,7 @@
 2. Marketplaces de Referencia
 3. Descripción de Colaboradores
 4. Tablero de Trabajo
+5. Wireframe
 
 1- Información General - 
 
@@ -40,3 +41,8 @@ email: nicocoqui88@gmail.com
 
 4. Tablero de Trabajo Trello:
 https://trello.com/proyectointegradorgrupo02
+
+5. Wireframes:
+
+Desktop: https://whimsical.com/bookify-home-MiwobuWeHdJ4tUFvjQPHiA
+Mobile: https://whimsical.com/bookify-mobile-RcZLTH58U6q4Ri8QKMneHK
