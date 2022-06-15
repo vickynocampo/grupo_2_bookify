@@ -4,9 +4,239 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail</title>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="/css/normalize.css" rel="stylesheet"/>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/productDetail.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="top-header">
+            <nav class="contact">
+                <a href="mailto:info@bookify.ar">Contacto</a>
+                <p class="separator-contact">|</p>
+                <a href="#">Ayuda</a>
+            </nav>
+            <nav class="account">
+                <a href="/register">Crear cuenta</a>
+                <p class="separator-account">|</p>
+                <a href="/login">Mi cuenta</a>
+            </nav>
+        </div>
+        <div class="main-header">
+            <img src="/img/logo.jpeg" alt="logo-bookify">
+            <div class="cart">
+                <a href="/productCart"><i class="cart-icon fas fa-cart-arrow-down"></i></a>
+                <p>Carrito</p>
+            </div>
+            <div class="sloganbox">
+                <p class="slogan">¡Conecta con la lectura!</p>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="bm">
+                <i class="bm-icon fas fa-bars fa-2x"></i>
+            </div>
+            <form class="search" action="#" method="GET">
+                    <input type="search" class="search-bar" name="terminoBuscado">
+                    <button><i class="bs fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header-select">
+            <select name="categories">
+                <option value="0">CATEGORÍAS</option>
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+                <option value="3">Opcion 3</option>
+            </select>
+            <select name="news">
+                <option value="0">NOVEDADES</option>
+                <option value="1">Novedad 1</option>
+                <option value="2">Novedad 2</option>
+                <option value="3">Novedad 3</option>
+            </select>
+            <select name="offers">
+                <option value="0">OFERTAS</option>
+                <option value="1">Oferta 1</option>
+                <option value="2">Oferta 2</option>
+                <option value="3">Oferta 3</option>
+            </select>
+            <select name="sells-guide">
+                <option value="0">GUIA DE COMPRAS</option>
+                <option value="1">Guia 1</option>
+                <option value="2">Guia 2</option>
+                <option value="3">Guia 3</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <!--Esta lista es provisoria para mostrar en el navegador. Debe ser automatizada-->
+        <ol class="product-route">  
+            <a href="#"><li>Home > </li></a>
+            <a href="#"><li>Categoría > </li></a>
+            <a href="#"><li>Opcion > </li></a>
+            <a href="#"><li>Nombre del Libro</li></a>
+        </ol>
+        <div class="product-main"> <!--Se debe automarizar la info de cada producto en cada seccion-->
+              <div class="product-main-top">
+                <div class="product-main-top-left">
+                    <div class="image-container">
+                        <img src="/img/cosmos.jpg" alt="product-image">
+                    </div>    
+                    <div class="media">
+                        <!--Se debe generar cada cuenta en redes para poner en el href-->
+                        <div class="img-media"><a href="#"><img src="/img/fb.png" alt="logo-facebook"></a></div>
+                        <div class="img-media"><a href="#"><img src="/img/tweeter.png" alt="logo-tweeter"></a></div>
+                        <div class="img-media"><a href="#"><img src="/img/instagram.png" alt="logo-instagram"></a></div>
+                        <div class="img-media"><a href="#"><img src="/img/whatsapp.png" alt="logo-whatsapp"></a></div>
+                    </div>
+                <!--Definir donde se redirige:-->
+                <a href="#" id="availability"><p>Avisarme cuando este disponible</p></a>
+                </div> 
+                <div class="product-main-top-right">
+                    <div class=product-title>
+                        <h1>COSMOS</h1>
+                        <h4>Autor: Karl Sagan</h4>
+                        <h4>Editorial:</h4>
+                    </div>
+                    <div class="product-shop">
+                        <div class="product-price">
+                            <p>$ 3.500,00.-</p>
+                        </div>
+                        <div class="quantity-container">
+                            <label for="quantity">Cantidad</label>
+                            <input type="number" name="quantity" class="quant-input">
+                        </div>
+                        <div class="cart-label">
+                            <button type="submit" class="cart-button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-synposis">
+                        <h1>Sinposis:</h1>
+                        <p>Cosmos trata de la ciencia en su contexto humano más amplio y explica cómo la ciencia y la civilización se desarrollan conjuntamente. La obra aborda también el tema de las misiones espaciales destinadas a explorar los planetas más próximos a la Tierra, del origen de la vida, de la muerte del Sol, de la evolución de las galaxias y de los orígenes de la materia, los soles y los mundos, así como también los más recientes descubrimientos sobre la vida fuera de la Tierra. Basado en un programa que el profesor Carl Sagan realizó para la televisión y con más de doscientas cincuenta ilustraciones a todo color verdaderamente asombrosas, Cosmos está narrado con la proverbial habilidad de su autor para conseguir que las ideas científicas fuesen comprensibles y apasionantes.
+                        </p>
+                    </div>
+                    <div class="product-aditional-info">
+                        <h3>Informacion Adicional:</h3>
+                        <h4 id="">Editorial:</h4>
+                        <h4 id="">ISBN:</h4>
+                        <h4 id="">Nro. de Páginas:</h4>
+                        <h4 id="">Idioma:</h4>
+                        <h4 id="">Formato:</h4>
+                        <h4 id="">Encuadernación:</h4>
+                        <h4 id="">Clasificación:</h4>
+                        <h4 id="">Fecha Publicación:</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="product-main-bottom">
+                <div class="similar-products-title">
+                    <h3>Titulos Similares:</h3>
+                </div>
+                <div class="similar-products">
+                    <div class="other-products">
+                        <div class="img-other-products">
+                            <img src="/img/universo2.png" alt="Universo 2">
+                        </div>
+                        <div class="other-products-price">
+                              <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="other-products">
+                        <div class="img-other-products">
+                            <img src="/img/universo.png" alt="Universo">
+                        </div>
+                        <div class="other-products-price">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="other-products">
+                        <div class="img-other-products">
+                            <img src="/img/universo3.png" alt="Universo 3">
+                        </div>
+                        <div class="other-products-price">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="other-products">
+                        <div class="img-other-products">
+                            <img src="/img/universo4.png" alt="Universo 4">
+                        </div>
+                        <div class="other-products-price">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </main>
+    <footer>
+        <div class="top-footer">
+            <div class="media">
+                <h3>Seguinos en redes</h3>
+                <div class="img-media">
+                    <a href=""><img src="/img/fb.png" alt="logo-facebook" width="50px" height="50px"></a>
+                    <a href=""><img src="/img/tweeter.png" alt="logo-tweeter" width="50px" height="50px"></a>
+                    <a href=""><img src="/img/instagram.png" alt="logo-instagram" width="50px" height="50px"></a>
+                    <a href=""><img src="/img/whatsapp.png" alt="logo-whatsapp" width="50px" height="50px"></a>
+                </div>
+            </div>
+            <div class="payment">
+                <h3>Medios de Pago</h3>
+                <div class="img-payment">
+                    <div class="img-payment-top">
+                        <img src="/img/visa.png" alt="logo-visa" width="37" height="12">
+                        <img src="/img/amex.png" alt="logo-amex" width="60" height="30">
+                        <img src="/img/master.png" alt="logo-master" width="45" height="25">
+                    </div>
+                    <div class="img-payment-bottom">
+                        <img src="/img/mercado.png" alt="logo-mercado" width="45" height="45">
+                        <img src="/img/paypal.png" alt="logo-paypal" width="35" height="30">
+                        <img src="/img/rapipago.png" alt="logo-rapipago" width="60" height="45">
+                    </div>
+                </div>
+            </div>
+            <div class="catalogue">
+                <h3>Catálogo</h3>
+                <div class="op-catalogue">
+                    <p><a href="#">Libros por categoría</a></p>
+                    <p><a href="#">Búsqueda avanzada</a></p>
+                </div>
+            </div>
+            <div class="my-account">
+                <h3>Mi Cuenta</h3>
+                <div class="op-account">
+                    <p><a href="/productCart">Estado de mis Compras</a></p>
+                    <p><a href="/register">Crear Cuenta</a></p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <div class="op-contact">
+                    <p><a href="#">Atención al cliente</a></p>
+                    <p><a href="#">Preguntas frecuentes</a></p>
+                    <p><a href="#">Cancelaciones</a></p>
+                    <p><a href="#">Devoluciones</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="data-fiscal">
+                <h5>Data Fiscal</h5>
+                <div class="img-data">
+                    <img src="/img/data.png" alt="qr-data" width="60px" height="60px">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2022 - Bookify S.A. Apple Group</p>
+                <p>TODOS LOS DERECHOS RESERVADOS</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
