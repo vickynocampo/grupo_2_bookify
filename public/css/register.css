@@ -1,0 +1,108 @@
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main h2 {
+    color: #eb1377;
+    font-size: 2rem;
+
+}
+
+main h3{
+    color: #eb1377;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.general-form{
+    background-color: #D9D9D9;
+    height: auto;
+    padding: 1.5 rem;
+    margin-bottom: 8%;
+    padding-bottom: 2rem;
+}
+
+.general-form p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: rgb(90, 84, 84);
+
+}
+
+.generalinput{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.register-button{
+    display: flex;
+    justify-content: center;
+}
+
+.registerb{
+    
+    background-color: #4c00ff;
+    border: none;
+    border-radius: 0.5rem;
+    width: 50%;
+    padding: 1.5rem;
+    color: #FFFF;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+@media (min-width: 361px){
+    main h2{
+        font-size: 3rem;
+    }
+
+    main h3{
+        font-size: 2.5rem;
+        margin-left: 3rem;
+        width: 100%;
+    }
+
+    .general-form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .user_name{
+        width: 100%;
+    }
+
+    .fullname{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-content: space-between;
+    }
+
+    .general-form p{
+        font-size: 1.8rem;
+        margin-left: 3rem;
+    }
+
+    .generalinput{
+        width: 45rem;
+        margin-left: 1rem;
+        padding: 2rem;
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+
+    .register_checkbox{
+        display: flex;
+        flex-direction: column;
+    }
+}

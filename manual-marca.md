@@ -4,6 +4,7 @@ Naranja claro: #FCA970;
 Blanco: #FFFFFF;
 Gris oscuro: #7F7F7F;
 Gris claro: #D9D9D9;
+Magenta: #EB1377
 
 Tipografia: 
 Familia: Barlow Black;
