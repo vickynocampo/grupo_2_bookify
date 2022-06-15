@@ -9,9 +9,9 @@ html {
 body {
     background-color: #FFFFFF;
     font-family: 'Barlow', sans-serif;
-    min-width: 300px;
+
     max-width: 1200px;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -253,13 +253,14 @@ footer a {
         flex-wrap: wrap;
         flex-direction: row;
     }
+
     .media, .payment, .catalogue, .my-account, .footer-contact  {
         width: 20%;
         min-width: 105px;
         margin-bottom: 0;
     }
 
-    .bm{
+    .bm {
         display: none;
     }
 
@@ -272,24 +273,24 @@ footer a {
         align-items: flex-end;
     }
 
-    .sloganbox{
+    .sloganbox {
         margin-bottom: 1rem;
     }
 
-    .sloganbox p{
+    .sloganbox p {
         font-size: 2.5rem;
     }
 
-    .cart-icon{
+    .cart-icon {
         font-size: 5rem;
     }
 
-    .cart{
+    .cart {
         right: 10%;
         bottom: 0%;
     }
 
-    .cart p{
+    .cart p {
         display: block;
         font-size: 2rem;
         text-align: center;
@@ -297,15 +298,15 @@ footer a {
         color: rgb(90, 84, 84);
     }
 
-    .main-header img{
+    .main-header img {
         width: 25%;
     }
 
-    .bottom-header{
+    .bottom-header {
         padding-bottom: 1%;
     }
 
-    .header-select{
+    .header-select {
         display: block;
         margin-left: 2%;
         padding-bottom: 1.5rem;
@@ -313,12 +314,12 @@ footer a {
         width: 80%;
     }
 
-    .header-select select{
+    .header-select select {
         padding: 0.5rem;
         width: 21%;
     }
 
-    .header-select option{
+    .header-select option {
         color: #FFFFFF;
         background-color: #FF7F27;
         font-size: 2rem;
@@ -327,11 +328,11 @@ footer a {
     .img-media {
         width: 70%;
     }
+
     .img-media img {
         height: 25px;
         width: 25px;
     }
-
 
     .img-payment {
     width: 100%;
@@ -353,19 +354,18 @@ footer a {
         position: relative;        
     }
 
-    .search button, .search-bar{
+    .search button, .search-bar {
         padding: 1rem;
         border:rgb(90, 84, 84) solid 2px;
     }
 
-    .bs{
+    .bs {
         font-size: 2rem;
     }
 
-    .search{
+    .search {
         margin-left: 2.5rem;
     }
-
 
     .copyright {
         width: 100%;
@@ -382,7 +382,4 @@ footer a {
         margin-left: 95%;
 
     }
-
-
-
 }
