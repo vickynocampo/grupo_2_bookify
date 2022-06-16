@@ -14,3 +14,7 @@ Cuerpos de texto: 12px;
 Titulares: 24px;
 Precios: 18px;
 Descripciones: 16px;
+
+Lo que tenga borde: border-radius:5px;
+Lo que sea input borde blanco del mismo color del area de escritura con border-radius:5px
+
