@@ -21,3 +21,19 @@ Las acciones pactadas en la retro por el equipo son las siguientes:
     d- Si algun miembro tiene algun bloqueante para desarrollar alguna actividad comunicarlo por algun canal para que otros podamos ayudar
 
 Link del tablero: https://www.figma.com/file/Ys9CGfsjqsIHM1eQLDPUXr/Sprint-1---Retro?node-id=1%3A32
+
+== RETRO SPRINT 2 ==
+
+1. ¿Que hicimos bien?
+
+Vimos buenos resultados en la dinamica de la reunion semanal. El trabajo y apoyo en equipo a seguido siendo la fortaleza del grupo.
+La comunicación entre los miembros mejoró durante el sprint. Consolidación del grupo. 
+
+2. ¿Que podemos mejorar?
+
+Dificultades para llegar a consensos grupales en cuanto a definiciones del proyecto. Dedicación de tiempo al proyecto. 
+
+3. ¿Que acciones tomamos para lograr esas mejoras?
+
+    a- Mejorar la organización individual de tiempo. 
+    b- Definir hora para otra reunión. 
