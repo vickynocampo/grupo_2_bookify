@@ -4,11 +4,12 @@ main {
 }
 
 .login-box {
-    background-color: #D9D9D9
+    background-color: #D9D9D9;
+    border-radius: 5px;
 }
 
 .login-box {
-    max-width: 320px;
+    max-width: 340px;
     padding-bottom: 0px;
     margin: auto;
 }
@@ -17,19 +18,23 @@ main h3 {
     width: 100%;
     text-align: left;
     color: #eb1377;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     padding-top: 15px;
     margin: 15px 5px 0px 5px;
 }
 
 main h5 {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     margin-top: 0%;
+}
+
+main p {
+    font-size: 1.2rem;
 }
 
 main span {
     font-style: italic;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: red;
 }
 
@@ -45,21 +50,22 @@ main span {
     font-style: none;
     text-decoration: none;
     margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 .login {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .login {
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-bottom: 10%;
 }
 
 .campo {
    border: solid 1px #ebebeb;
-   border-radius: 5%;
+   border-radius: 5px;
    display: block;
    width: 100%;
    margin: 8px 0;
@@ -67,14 +73,15 @@ main span {
 }
 
 .boton-enviar {
-    width: 30%;
-    height: 20px;
+    width: 35%;
+    height: 25px;
     background-color: rgb(88, 4, 234);
     border: rgb(88, 4, 234);
     color: #FFF;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 #button-account {
@@ -94,9 +101,6 @@ main span {
 }
 
 @media (min-width: 361px){
-    .login {
-        max-width: 250px;
-    }
     .boton-enviar:hover{
         background-color: #03264C;
     }
