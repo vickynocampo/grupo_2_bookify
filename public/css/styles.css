@@ -60,6 +60,18 @@ header {
     margin-top: 3%;
     margin-left: 2%;
     margin-bottom: 2%;
+
+}
+
+@keyframes logo {
+    0% { opacity: 20% }
+    25% {opacity: 80%}
+    100% {opacity: 20%}
+}
+
+.main-header img {
+    animation: logo 3s infinite;
+    animation-direction: alternate;
 }
 
 .sloganbox {
