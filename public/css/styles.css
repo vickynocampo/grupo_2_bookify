@@ -9,7 +9,6 @@ html {
 body {
     background-color: #FFFFFF;
     font-family: 'Barlow', sans-serif;
-
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -18,6 +17,16 @@ body {
 header {
     background-color: #D9D9D9;
     width: 100%;
+    position: relative;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 5px;
 }
 
 .top-header {
@@ -37,8 +46,16 @@ header {
     font-size: 1.1rem;
 } 
 
+.account {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;;
+
+}    
+
 .separator-account {
-    display: inline;
+    display: none;
     color: #FF7F27;
 }
 
@@ -48,19 +65,28 @@ header {
 }
 
 .main-header {
+    /* Valor anterior:
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: relative; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-header img {
+    /* Valor anterior:
     width: 190px;
     height: 100%;
     border-radius: 10px;
     margin-top: 3%;
     margin-left: 2%;
-    margin-bottom: 2%;
-
+    margin-bottom: 2%;*/
+    width: 190px;
+    height:60px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 8px;
 }
 
 @keyframes logo {
@@ -74,6 +100,7 @@ header {
     animation-direction: alternate;
 }
 
+/* Valor anterior:
 .sloganbox {
     display: block;
     font-style: italic;
@@ -82,17 +109,31 @@ header {
     font-size: 1.4rem;
     margin-top: 1%;
     margin-left: 2%;
+}*/
+
+.sloganbox {
+    font-style: italic;
+    font-weight: bold;
+    color: #FF7F27;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    margin-left: 8px;
 }
 
 .slogan{
     margin: 0px;
-    margin-bottom: 1rem;
+    /* Valor anterior: 
+    margin-bottom: 1rem;*/
 }
 
 .cart {
     position: absolute;
-    right: 10%;
+    right: 15px;
     bottom: 30%;
+    /* Valor anterior:
+    position: absolute;
+    right: 10%;
+    bottom: 30%;*/
 }
 
 .cart p{
@@ -100,13 +141,18 @@ header {
 }
 
 .cart-icon { 
-    font-size: 3.5rem;
+    /* valor anterior: font-size: 3.5rem;*/
+    font-size: 3rem;
     color: rgb(90, 84, 84);
 }
 
 .bottom-header {
+    /* Valor anterior: display: flex;
+    padding-bottom: 3%;*/
     display: flex;
-    padding-bottom: 3%;
+    margin: 10px;
+    /* Aca estaria bueno poner un color de fondo*/
+    align-items: center;
 }
 
 .bm {
@@ -136,19 +182,33 @@ header {
 }
 
 .search-bar {
+    /* Valor anterior:
     width: 80%;
     border: none;
     border-radius: 5px 0px 0px 5px;
+    padding: 4%;*/
+    width: 85%;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px #7F7F7F;
     padding: 4%;
+    margin-top: 4px;
 }
 
 .search button{
+    /* Valor anterior: 
     border: none;
     background-color: #FFF;
     color: #666;
     border-radius: 0px 5px 5px 0px;
     padding: 4%;
-    font-size: 12px;
+    font-size: 12px;*/
+    border: none;
+    color: #666;
+    border-radius: 0px 5px 5px 0px;
+    padding: 4%;
+    font-size: 16px;
+    background-color: #D9D9D9;
 }
 
 .header-select{
@@ -280,55 +340,99 @@ footer a {
         font-size: 1.4rem;
     }
 
+    /*Esto antes no estaba:*/
+    .contact, .account {
+        margin: 5px 10px 0 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
     .main-header {
         flex-direction: row;
         align-items: flex-end;
     }
 
     .sloganbox {
-        margin-bottom: 1rem;
+        /* Esto antes no estaba:*/
+        border: 50%;
+        font-size: 1.6rem;
+        /*valor anterior: margin-bottom: 1rem;*/
     }
 
     .sloganbox p {
-        font-size: 2.5rem;
+        /* Valor anterior
+        font-size: 2.5rem;*/
+        font-size: 2rem;
     }
 
     .cart-icon {
-        font-size: 5rem;
+        /* Valor anterior:
+        font-size: 5rem;*/
+        font-size: 3.5rem
     }
-
+   
+    /*Esto antes no estaba:*/
     .cart {
+        /* Valor anterior:
         right: 10%;
-        bottom: 0%;
+        bottom: 0%;*/
+        /* Se agrega/modifica:*/
+        position: absolute;
+        right: 30px;
+        bottom: 55px;
+        text-align: center;
     }
-
+    
+    /* Habria que eliminar:
     .cart p {
         display: block;
         font-size: 2rem;
         text-align: center;
         margin: 0.2rem;
         color: rgb(90, 84, 84);
-    }
+    }*/
 
     .main-header img {
-        width: 25%;
+        /* Valor anterior
+        width: 25%;*/
     }
 
     .bottom-header {
-        padding-bottom: 1%;
+        /* Valor anterior:
+        padding-bottom: 1%;*/
+        /*Esto antes no estaba:*/
+        display: flex;
+  
     }
 
     .header-select {
+        /* Valor anterior: 
         display: block;
         margin-left: 2%;
         padding-bottom: 1.5rem;
         font-size: 1.6rem;
-        width: 80%;
+        width: 80%; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 5px auto;
+        font-size: 1.6rem;
+        width: 100%;
+        height: 40px;
+        gap:2%;
+        background-color:#FF7F27; /*Esto es nuevo, se puede cambiar*/
     }
 
     .header-select select {
+        /* Valor anterior:
         padding: 0.5rem;
-        width: 21%;
+        width: 21%;*/
+        padding: 0.5rem;
+        background-color:#FF7F27;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-radius: 5px;
+        border: #0096c7 ;
     }
 
     .header-select option {
@@ -368,7 +472,8 @@ footer a {
 
     .search button, .search-bar {
         padding: 1rem;
-        border:rgb(90, 84, 84) solid 2px;
+        /* Valor anterior:  border:rgb(90, 84, 84) solid 2px;*/
+        border: #D9D9D9;/*Esto antes no estaba:*/
     }
 
     .bs {
@@ -376,7 +481,8 @@ footer a {
     }
 
     .search {
-        margin-left: 2.5rem;
+        /* Valor anterior: margin-left: 2.5rem;*/
+        margin-left: 2px;
     }
 
     .copyright {
@@ -394,4 +500,25 @@ footer a {
         margin-left: 95%;
 
     }
+}
+ @media (min-width:769px) {
+
+        .top-nav {
+            display: flex;
+            flex-direction: row;
+            text-align: right;
+            position: absolute;
+            right: 0;
+            top: 5px;
+        }
+        
+        .contact, .account {
+            margin: 5px 10px 0 0;
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: inline;
+        }
+        .separator-account {
+            display: inline;
+        }
 }

@@ -14,23 +14,19 @@
 </head>
 <body>
     <header>
-        <div class="top-header">
-            <nav class="contact">
-                <a href="mailto:info@bookify.ar">Contacto</a>
-                <p class="separator-contact">|</p>
-                <a href="#">Ayuda</a>
-            </nav>
-            <nav class="account">
-                <a href="/register">Crear cuenta</a>
-                <p class="separator-account">|</p>
-                <a href="/login">Mi cuenta</a>
-            </nav>
-        </div>
         <div class="main-header">
-            <img src="/img/logo.jpeg" alt="logo-bookify">
-            <div class="cart">
-                <a href="/productCart"><i class="cart-icon fas fa-cart-arrow-down"></i></a>
-                <p>Carrito</p>
+            <a href="/"><img src="/img/logo.jpeg" alt="logo-bookify"></a>
+            <div class="top-nav">
+                <nav class="contact">
+                    <a href="mailto:info@bookify.ar">Contacto</a>
+                    <p class="separator-contact">|</p>
+                    <a href="#">Ayuda</a>
+                </nav>
+                <nav class="account">
+                    <a href="/register">Crear cuenta</a>
+                    <p class="separator-account">|</p>
+                    <a href="/login">Mi cuenta</a>
+                </nav>
             </div>
             <div class="sloganbox">
                 <p class="slogan">¡Conecta con la lectura!</p>
@@ -71,9 +67,12 @@
                 <option value="3">Guia 3</option>
             </select>
         </div>
+        <div class="cart">
+            <a href="/productCart"><i class="cart-icon fas fa-cart-arrow-down"></i></a>
+        </div>
     </header>
     <main>
-<p>MAIN</p>
+<a href="/productDetail">Ver detalle de producto</a>
     </main>
     <footer>
         <div class="top-footer">
