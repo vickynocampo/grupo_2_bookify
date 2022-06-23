@@ -36,4 +36,4 @@ Dificultades para llegar a consensos grupales en cuanto a definiciones del proye
 3. ¿Que acciones tomamos para lograr esas mejoras?
 
     a- Mejorar la organización individual de tiempo. 
-    b- Definir hora para otra reunión. 
+    b- Definir hora para otra reunión.

@@ -1,7 +1,6 @@
-const path = require("path");
-
 const loginController = {
-    login : (req, res) =>{res.sendFile(path.resolve(__dirname,"../views/login.html"))}
+    login : (req, res) =>{res.render("login")}, 
+    loginPost: (req, res)=>{res.redirect("/")}
 }
 
 module.exports = loginController;

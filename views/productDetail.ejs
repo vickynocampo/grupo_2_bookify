@@ -14,64 +14,7 @@
     <link href="/css/productDetail.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="main-header">
-            <a href="/"><img src="/img/logo.jpeg" alt="logo-bookify"></a>
-            <div class="top-nav">
-                <nav class="contact">
-                    <a href="mailto:info@bookify.ar">Contacto</a>
-                    <p class="separator-contact">|</p>
-                    <a href="#">Ayuda</a>
-                </nav>
-                <nav class="account">
-                    <a href="/register">Crear cuenta</a>
-                    <p class="separator-account">|</p>
-                    <a href="/login">Mi cuenta</a>
-                </nav>
-            </div>
-            <div class="sloganbox">
-                <p class="slogan">¡Conecta con la lectura!</p>
-            </div>
-        </div>
-        <div class="bottom-header">
-            <div class="bm">
-                <i class="bm-icon fas fa-bars fa-2x"></i>
-            </div>
-            <form class="search" action="#" method="GET">
-                    <input type="search" class="search-bar" name="terminoBuscado">
-                    <button><i class="bs fas fa-search"></i></button>
-            </form>
-        </div>
-        <div class="header-select">
-            <select name="categories">
-                <option value="0">CATEGORÍAS</option>
-                <option value="1">Opcion 1</option>
-                <option value="2">Opcion 2</option>
-                <option value="3">Opcion 3</option>
-            </select>
-            <select name="news">
-                <option value="0">NOVEDADES</option>
-                <option value="1">Novedad 1</option>
-                <option value="2">Novedad 2</option>
-                <option value="3">Novedad 3</option>
-            </select>
-            <select name="offers">
-                <option value="0">OFERTAS</option>
-                <option value="1">Oferta 1</option>
-                <option value="2">Oferta 2</option>
-                <option value="3">Oferta 3</option>
-            </select>
-            <select name="sells-guide">
-                <option value="0">GUIA DE COMPRAS</option>
-                <option value="1">Guia 1</option>
-                <option value="2">Guia 2</option>
-                <option value="3">Guia 3</option>
-            </select>
-        </div>
-        <div class="cart">
-            <a href="/productCart"><i class="cart-icon fas fa-cart-arrow-down"></i></a>
-        </div>
-    </header>
+<%- include("./partials/header.ejs") %>
     <main>
         <!--Esta lista es provisoria para mostrar en el navegador. Debe ser automatizada-->
         <ol class="product-route">  

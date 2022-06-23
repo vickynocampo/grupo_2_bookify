@@ -2,7 +2,7 @@ Paleta de Colores:
 Naranja logo: #FF7F27;
 Naranja claro: #FCA970;
 Blanco: #FFFFFF;
-Gris oscuro: #7F7F7F;
+Gris oscuro: npm ;
 Gris claro: #D9D9D9;
 Magenta: #EB1377
 
