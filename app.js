@@ -17,6 +17,7 @@ app.use("/product", productRoutes);
 app.use("/login", usersRoutes);
 app.use("/register", mainRoutes);
 app.use("/productCart", cartRoutes);
-app.use("/product/create", productRoutes)
+app.use("/product/create", productRoutes);
+app.use("/product/edit", productRoutes);
 
 app.listen(port,()=>{console.log("Servidor corriendo en puerto 3030")});
