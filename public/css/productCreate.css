@@ -1,0 +1,83 @@
+h2{
+    color: #eb1377;
+    font-size: 2rem;
+}
+
+.title{
+    width: 90%;
+    margin: auto;
+}
+
+.generalForm {
+    background-color: #D9D9D9;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15%;
+}
+
+.formContent{
+    width: 90%;
+    margin: auto;
+}
+
+.generalForm p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(90, 84, 84);
+
+}
+
+#option{
+    font-size: 1.2rem;
+}
+
+.generalinput{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.inputFile{
+    font-size: 1.2rem;
+}
+
+select{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.inputTextarea{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+    height: 200px;
+}
+
+.buttoms{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.formButtom {
+    background-color: #4c00ff;
+    border: none;
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 1.4rem;
+    color: #FFFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8%;
+}

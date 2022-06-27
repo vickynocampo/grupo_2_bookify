@@ -13,9 +13,10 @@ app.use(express.static(publicPath));
 app.set("view engine", "ejs");
 
 app.use("/", mainRoutes);
-app.use("/productDetail", productRoutes);
+app.use("/product", productRoutes);
 app.use("/login", usersRoutes);
 app.use("/register", mainRoutes);
 app.use("/productCart", cartRoutes);
+app.use("/product/create", productRoutes)
 
 app.listen(port,()=>{console.log("Servidor corriendo en puerto 3030")});

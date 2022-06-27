@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Create</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="/css/normalize.css" rel="stylesheet"/>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/productCreate.css" rel="stylesheet">
+</head>
+<body>
+<%- include("./partials/header.ejs") %>
+<main>
+<div class="title">
+    <h2>Cargar Libro</h2>
+</div>
+<form class="generalForm" method="POST">
+    <div class="formContent">
+    <label name="name">
+        <p>Nombre</p>
+        <input type="text" class="generalinput" name="name">
+    </label>
+    <label name="price">
+        <p>Precio</p>
+        <input type="text" class="generalinput" name="price">
+    </label>
+    <label name="stock">
+        <p>Stock Inicial</p>
+        <input type="text" class="generalinput" name="stock">
+    </label>
+    <label name="front">
+        <p>Portada</p>
+        <input type="file" class="inputFile" name="front">
+    </label>
+    <label name="editorial">
+        <p>Stock Inicial</p>
+        <input type="text" class="generalinput" name="editorial">
+    </label>
+    <label name="autor">
+        <p>Autor</p>
+        <input type="text" class="generalinput" name="autor">
+    </label>
+    <div class="format">
+        <p>Formato</p>
+        <!-- VER LUEGO FUNCIONAMIENTO DE ESTO -->
+        <label name="book" value="format">
+            <p id="option">
+            <input type="radio" > Fisico
+            </p>
+        </label>
+        <label name="Digibook"  value="format">
+            <p id="option">
+            <input type="radio"> Digital
+            </p>
+        </label>
+    </div>
+    <p>Categoría</p>
+    <select name="category">
+        <option value="0">Categoría 1</option>
+        <option value="1">Categoría 2</option>
+        <option value="2">Categoría 3</option>
+        <option value="3">Categoría 4</option>
+    </select>
+    <label name="description">
+        <p>Descripción</p>
+        <textarea class="inputTextarea"></textarea>
+    </label>
+    <div class="buttoms">
+            <input type="submit" class="formButtom" value="Cargar Libro" class="boton-enviar">
+            <input type="reset" class="formButtom" value="Limpiar" class="boton-enviar">
+    </div>
+
+    </div>
+</form>
+</main>
+<%- include("./partials/footer.ejs") %>
+</body>
+</html>

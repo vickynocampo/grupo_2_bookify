@@ -4,6 +4,7 @@ main{
     
 }
 
+
 main h2 {
     color: #eb1377;
     font-size: 2rem;
@@ -92,6 +93,7 @@ main h3{
         font-size: 1.8rem;
         margin-left: 3rem;
     }
+
 
     .generalinput{
         width: 45rem;
