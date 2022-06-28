@@ -11,15 +11,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="/css/normalize.css" rel="stylesheet"/>
     <link href="/css/styles.css" rel="stylesheet">
-    <link href="/css/register.css" rel="stylesheet">
+    <link href="/css/productCreate.css" rel="stylesheet">
 </head>
 <body>
 <%- include("./partials/header.ejs") %>
     <main>
         <h2>Crear Cuenta</h2>
-        <form class="general-form">
-            <h3>Información Personal</h3>
-            <!-- <div class="fullname"> -->
+        <form class="generalForm">
+            <div class="formContent">
+            <h2>Información Personal</h2>
+            <img src="/img/line.png" alt="line" class="login-line">
             <label name="name">
                 <p>Nombre</p>
                 <input type="text" class="generalinput" name="name">
@@ -28,15 +29,17 @@
                 <p>Apellido</p>
                 <input type="text" class="generalinput" name="lastname">
             </label>
-            <!-- </div> -->
             <label name="birthday">
                 <p>Fecha de Nacimiento</p>
                 <input type="date" class="generalinput" name="birthday">
             </label>
+            </div>
         </form>
 
-        <form class="general-form">
-            <h3>Información de Cuenta</h3>
+        <form class="generalForm">
+            <div class="formContent">
+            <h2>Información de Cuenta</h2>
+            <img src="/img/line.png" alt="line" class="login-line">
             <label name="user_name" class="user_name">
                 <p>Nombre de Usuario</p>
                 <input type="text" class="generalinput" name="user_name">
@@ -69,9 +72,11 @@
                 </p>
             </label>
             </div>
-        </form>
-        <form class="register-button" action="#" method="POST">
-            <button type="submit" class="registerb">Registrarse</button>
+            <div class="buttoms">
+                <input type="submit" class="formButtom" value="Registrarse" class="boton-enviar">
+            </div>
+            </div>
+            
         </form>
     </main>
 <%- include("./partials/footer.ejs") %>

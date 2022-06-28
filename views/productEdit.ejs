@@ -15,10 +15,10 @@
 <body>
 <%- include("./partials/header.ejs") %>
 <main>
-<div class="title">
-    <h2>Editar Libro</h2>
-</div>
 <form class="generalForm" method="POST">
+    <div class="title">
+        <h2>Editar Libro</h2>
+    </div>
     <div class="formContent">
     <label name="name">
         <p>Nombre</p>
@@ -43,6 +43,10 @@
     <label name="autor">
         <p>Autor</p>
         <input type="text" class="generalinput" name="autor">
+    </label>
+    <label name="date">
+        <p>Fecha de Publicación</p>
+        <input type="date" class="generalinput" name="autor">
     </label>
     <div class="format">
         <p>Formato</p>
