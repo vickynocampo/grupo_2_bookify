@@ -319,7 +319,7 @@ footer a {
 }
 
 
-@media (min-width:361px) {
+@media (min-width:540px) {
     footer {
         display: flex;
         flex-wrap: wrap;
@@ -501,6 +501,7 @@ footer a {
 
     }
 }
+
  @media (min-width:769px) {
 
         .top-nav {
