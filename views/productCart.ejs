@@ -35,9 +35,9 @@
         <div >
             <table style="width:100%">
                  <tr> 
-                  <th><input type="submit" value="Seguir comprando"></th>
-                  <th><input type="submit" value="Limpiar pedido"></th>
-                  <th><input type="submit" value="Actualizar datos"></th>
+                  <th><input type="submit" value="Seguir comprando" class = "submit-buttom"></th>
+                  <th><input type="submit" value="Limpiar pedido" class = "submit-buttom"></th>
+                  <th><input type="submit" value="Actualizar datos" class = "submit-buttom"></th>
                 </tr> 
             </table>
         </div>
@@ -45,33 +45,47 @@
         <div class = "productCart-main-bottom">
           <!-- <h2>Cupón de Descuento</h2> -->
           <div class = "coupon">
-            <label for ="icupon">Cupon de Descuento</label>
-            <input type="text" name="cupon" id = "icupon" >
-            <input type="submit" value="Aplicacion">
+            <label for ="icupon"><h2>Cupon de Descuento</h2></label>
+            <input type="text" name="cupon" class = "input-texto" >
+            <input type="submit" value="Aplicacion" class = "submit-buttom">
 
-            <label for ="icard">Gift Card Virtual</label>
-            <input type="text" name="card" id = "icard" >
-            <input type="submit" value="Aplicar Gift Card">
+            <label for ="icard"><h2>Gift Card Virtual</h2></label>
+            <input type="text" name="card" class = "input-texto" >
+            <input type="submit" value="Aplicar Gift Card" class = "submit-buttom">
           </div>
           <div class = "send">
             <h2>Calcular envio</h2>
             <p>Ingresa tu destino para obtener un precio estimado</p>
 
-            <label for ="iprovincia">Provincia</label>
-            <input type="text" name="provincia" id = "iprovincia" >
+            <label for ="iprovincia"><h2>Provincia</h2></label>
+            <input type="text" name="provincia" class = "input-texto" >
             <!-- <input type="submit" value="Aplicacion"> -->
 
-            <label for ="icodpostal">Código Postal</label>
-            <input type="text" name="codpostal" id = "icodpostal" >
-            <input type="submit" value="Calcular">
+            <label for ="icodpostal"><h2>Código Postal</h2></label>
+            <input type="text" name="codpostal" class = "input-texto" >
+            <input type="submit" value="Calcular" class = "submit-buttom">
           </div> 
           <div class = "purchases">
             <h2>Total de Compras</h2>
-            <label for ="isubtotal">Subtotal</label>
-            <label for ="icupondescuentos">Cupón de descuentos</label>
-            <label for ="icostoenvio">Costo de envío</label>
-            <label for ="itotal">Total</label>
-            <input type="submit" value="Realizar Compras">
+            <div class = "subtotal">
+              <p>Subtotal</p>
+              <div>formula-subtotal</div>
+            </div>
+            <div class = "formula-cupon">
+              <p>Cupón de descuentos</p>
+              <div>formula-cupon</div>
+            </div>
+            <div class="costo">
+              <p>Costo de envío</p>
+              <div>formula-costo</div>
+            </div>
+            <div class="total">
+              <h2>Total</h2>
+              <div>formula-total</div>
+            </div>
+            
+                        
+            <input type="submit" value="Realizar Compras" id = "submit-buttom-purchases">
             <!-- <input type="text" name="cupon" id = "icupon" >
             <input type="submit" value="Aplicacion"> -->
             
