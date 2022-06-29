@@ -6,12 +6,10 @@ main {
 .login-box {
     background-color: #D9D9D9;
     border-radius: 5px;
-}
-
-.login-box {
-    max-width: 340px;
+    max-width: 90%;
     padding-bottom: 0px;
     margin: auto;
+    margin-bottom: 2%;
 }
 
 main h3 {
