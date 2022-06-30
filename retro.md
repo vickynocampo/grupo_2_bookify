@@ -37,3 +37,9 @@ Dificultades para llegar a consensos grupales en cuanto a definiciones del proye
 
     a- Mejorar la organización individual de tiempo. 
     b- Definir hora para otra reunión.
+
+== RETRO SPRINT 3 ==
+
+1. ¿Que hicimos bien?
+2. ¿Que podemos mejorar?
+3. ¿Que acciones tomamos para lograr esas mejoras?
