@@ -41,5 +41,17 @@ Dificultades para llegar a consensos grupales en cuanto a definiciones del proye
 == RETRO SPRINT 3 ==
 
 1. ¿Que hicimos bien?
+
+Creo que mantuvimos lo propuesto en la retro anterior de tener una comunicación fluida y regular, y que cumplimos con casi todas las consignas, obteniendo buen feedback por parte de los profesores. 
+
 2. ¿Que podemos mejorar?
+
+Creo que nos cuesta definir algunas cuestiones por no querer imponerse sobre el otro, lo cual es bueno, pero al mismo tiempo por ello a veces no hay decisiones y algunos temas quedan pendientes. Quizá esto se logre con una daily de 5 minutos por whatsapp en la que todos participemos. Capaz esto ayudaría a destrabar temas sobre que hacer cuando hay tareas atrasadas o definiciones en general del sitio, como por ejemplo el diseño, las categorías de los libros, etc.
+A nivel grupal creo que debemos ser más concretos para finalizar ciertos temas, como por ejemplo las tareas que venimos arrastrando del segundo sprint.
+
+Creo que tenemos mucho potencial y que estaría bueno intentar lograr un proyecto sobresaliente, mas allá del resultado.
+
 3. ¿Que acciones tomamos para lograr esas mejoras?
+
+    a - Proponemos durante este sprint 1 o 2 meets adicionales para cerrar el Home y el Carrito.
+    b - Agregar una daily de 5 minutos por whatsapp en la que todos participemos. Esto ayudaría a destrabar temas sobre que hacer cuando hay tareas atrasadas o definiciones en general del sitio, como por ejemplo el diseño, las categorías de los libros, etc.
