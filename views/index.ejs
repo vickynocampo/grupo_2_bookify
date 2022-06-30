@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,48 @@
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="/css/normalize.css" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="/css/normalize.css" rel="stylesheet" />
     <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
 </head>
 <body>
-<%- include("./partials/header.ejs") %>
-    <main>
-        <a href="/product">Ver detalle de producto</a>
-    </main>
-<%- include("./partials/footer.ejs") %>
+    <%- include("./partials/header.ejs") %>
+        <main>
+            <div class="carrousel">
+                <div class="carrousel-main">
+                    <img src="#" alt="Universo 2">
+                    <img src="#" alt="Universo 2">
+                    <img src="#" alt="Universo 2">
+                    <img src="#" alt="Universo 2">
+                </div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <h3>Lo mas visto de la Semana:</h3>
+            <div class="lo-mas-visto">
+                <% books.forEach(function(book){%>
+                    <div class="other-products">
+                        <a href="/product/<%= book.id %>">
+                            <div class="img-other-products">
+                                <img src="/img/<%= book.image %>" alt="Universo 4">
+                            </div>
+                            <div class="other-products-price">
+                                <a href="#">Comprar</a>
+                            </div>
+                        </a>
+                    </div>
+                <% }); %>
+            </div>
+        </main>
+    <%- include("./partials/footer.ejs") %>
 </body>
+
 </html>
