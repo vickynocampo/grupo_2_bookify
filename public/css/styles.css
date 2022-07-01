@@ -95,9 +95,9 @@ header {
     100% {opacity: 20%}
 }
 
-.main-header img {
+.main-header img:hover {
     animation: logo 3s infinite;
-    animation-direction: alternate;
+    animation-direction: reverse;
 }
 
 /* Valor anterior:
