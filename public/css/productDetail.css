@@ -64,7 +64,7 @@ main .img-media img {
 }
 
 #availability {
-    color: #eb1377;
+    color: #ff4343;
     font-size: 1.8rem;
     font-weight: bold;
     padding: 5px;
@@ -85,7 +85,7 @@ main .img-media img {
 }
 
 .product-title h1 {
-    color: #eb1377;
+    color: #ff4343;
     font-size: 2.4rem;
     font-weight: bold;
 }
@@ -139,7 +139,7 @@ main .img-media img {
 }
 
 .product-synposis h1 {
-    color: #eb1377;
+    color: #ff4343;
     font-size: 2.4rem;
     font-weight: bold;
 }
@@ -151,7 +151,7 @@ main .img-media img {
 }
 
 .product-aditional-info h3 {
-    color: #eb1377;
+    color: #ff4343;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -168,7 +168,7 @@ main .img-media img {
 }
 
 .product-main-bottom h3 {
-    color: #eb1377;
+    color: #ff4343;
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
@@ -290,7 +290,7 @@ main .img-media img {
         display: flex;
         flex-direction: row;
         padding: 8px;
-        background-color: #7F7F7F;
+        background-color: #ff4343;
         align-items: center;
         justify-content: space-evenly;
     } 
