@@ -1,10 +1,7 @@
 Paleta de Colores:
-Naranja logo: #FF7F27;
-Naranja claro: #FCA970;
-Blanco: #FFFFFF;
-Gris oscuro: npm ;
-Gris claro: #D9D9D9;
-Magenta: #EB1377
+Rojo logo: #ff4343;
+Gris header y footer: #f1f1f1
+Gris barra: #7f7f7f
 
 Tipografia: 
 Familia: Barlow Black;
