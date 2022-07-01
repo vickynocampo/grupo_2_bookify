@@ -143,7 +143,7 @@ header {
 .cart-icon { 
     /* valor anterior: font-size: 3.5rem;*/
     font-size: 3rem;
-    color: rgb(90, 84, 84);
+    color: #626161;
 }
 
 .bottom-header {
@@ -160,7 +160,7 @@ header {
     display: block;
     margin: auto;
     text-align: center;
-    color: #FF7F27;
+    color: #FFFFFF;
     border: none;
     padding: 5px;
     background-color: none;
@@ -178,7 +178,7 @@ header {
 }
 
 .account a{
-    color: #FF7F27;
+    color: #ff4343;
 }
 
 .search-bar {
@@ -204,11 +204,11 @@ header {
     padding: 4%;
     font-size: 12px;*/
     border: none;
-    color: #666;
+    color: #FFFFFF;
     border-radius: 0px 5px 5px 0px;
     padding: 4%;
     font-size: 16px;
-    background-color: #D9D9D9;
+    background-color: #7f7f7f;
 }
 
 .header-select{
@@ -228,9 +228,13 @@ footer {
 footer h3 {
     width: 100%;
     text-align: center;
-    color: #eb1377;
+    color: #ff4343;
     font-size: 1.8rem;
     margin-bottom: 5px;
+}
+
+.bottom-header{
+    background-color: #7f7f7f;
 }
 
 .img-media img {
@@ -402,8 +406,14 @@ footer a {
         padding-bottom: 1%;*/
         /*Esto antes no estaba:*/
         display: flex;
+        background-color: #f1f1f1;
   
     }
+
+    .search button {
+        background-color: #f1f1f1;
+        color: #626161;
+       }
 
     .header-select {
         /* Valor anterior: 
@@ -420,7 +430,7 @@ footer a {
         width: 100%;
         height: 40px;
         gap:2%;
-        background-color:#FF7F27; /*Esto es nuevo, se puede cambiar*/
+        background-color:#626161; /*Esto es nuevo, se puede cambiar*/
     }
 
     .header-select select {
@@ -428,7 +438,7 @@ footer a {
         padding: 0.5rem;
         width: 21%;*/
         padding: 0.5rem;
-        background-color:#FF7F27;
+        background-color:#626161;
         color: #FFFFFF;
         font-weight: bold;
         border-radius: 5px;
@@ -436,10 +446,14 @@ footer a {
     }
 
     .header-select option {
-        color: #FFFFFF;
-        background-color: #FF7F27;
+        color: black;
+        background-color: #f1f1f1;
         font-size: 2rem;
         }
+    
+    option:hover {
+        background-color: #ff4343
+    }
 
     .img-media {
         width: 70%;
@@ -504,6 +518,12 @@ footer a {
 
  @media (min-width:769px) {
 
+        .main-header{
+            display: block;
+        }
+        .sloganbox{
+            display: none;
+        }
         .top-nav {
             display: flex;
             flex-direction: row;
@@ -521,6 +541,10 @@ footer a {
         }
         .separator-account {
             display: inline;
+        }
+
+        .search-bar{
+            border: #000000 solid 1px;
         }
 
 }

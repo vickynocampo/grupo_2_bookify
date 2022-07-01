@@ -1,5 +1,5 @@
 h2{
-    color: #eb1377;
+    color: #ff4343;
     font-size: 2.4rem;
     margin-bottom: 0px;
 }
@@ -26,6 +26,7 @@ h2{
     margin-top: 2%;
     border-radius: 0.5rem;
     padding-bottom: 5%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .formContent{
@@ -81,7 +82,7 @@ select{
 }
 
 .formButtom {
-    background-color: #4c00ff;
+    background-color: #ff4343;
     border: none;
     border-radius: 0.5rem;
     width: 60%;

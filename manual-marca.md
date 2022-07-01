@@ -1,7 +1,7 @@
 Paleta de Colores:
 Rojo logo: #ff4343;
 Gris header y footer: #f1f1f1
-Gris barra: #7f7f7f
+Gris barra: #626161
 
 Tipografia: 
 Familia: Barlow Black;
