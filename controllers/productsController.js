@@ -11,17 +11,16 @@ const productsController = {
 
     create: (req, res) => {res.render("productCreate")},
     edit: (req, res) => {res.render("productEdit")},
-    getProductById: (req, res) => {res.send("hola")}
-    //    const bookId = parseInt(req.params.id,10);
-    /*    console.log(bookId);
-        const bookFounded;
-        for (let i=0; i<books.length; i++) {
+    getProductById: (req, res) => {
+        const bookId = parseInt(req.params.id,10);
+        let bookFounded = "";
+        for (let i=0; i<=books.length; i++) {
             if (books[i].id === bookId) {
-                bookFounded = books[i];
-            }
-            else {res.render("productDetail", {book: bookFounded})}
+                bookFounded = books[i]
+                res.render("productDetail", {book: bookFounded})
+            } 
         }
-    } */
+    }
 }
 
 

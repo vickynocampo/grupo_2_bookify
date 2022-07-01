@@ -3,7 +3,7 @@
         "id": 1,
         "bookCategory": "Ciencia Ficcion",
         "image": "/cosmos.jpg",
-        "title": "Cosmos",
+        "title": "Eleazar",
         "author": "Karl Sagan",
         "editorial": "Planeta",
         "price": 100,
@@ -20,7 +20,7 @@
         "stock": "3"
     },
     {
-        "id": 2,
+        "id": 3,
         "bookCategory": "Ciencia Ficcion",
         "image": "/universo.png",
         "title": "Cosmos",
@@ -60,10 +60,10 @@
         "stock": "3"
     },
     {
-        "id": 2,
+        "id": 44,
         "bookCategory": "Ciencia Ficcion",
         "image": "/universo.png",
-        "title": "Cosmos",
+        "title": "Libro de Prueba",
         "author": "Karl Sagan",
         "editorial": "Planeta",
         "price": 100,
