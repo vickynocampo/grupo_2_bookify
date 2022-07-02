@@ -90,9 +90,9 @@ header {
 }
 
 @keyframes logo {
-    0% { opacity: 20% }
-    25% {opacity: 80%}
-    100% {opacity: 20%}
+    0% { scale: 20% }
+    25% {scale: 80%}
+    100% {scale: 20%}
 }
 
 .main-header img:hover {
@@ -383,7 +383,7 @@ footer a {
         /* Se agrega/modifica:*/
         position: absolute;
         right: 30px;
-        bottom: 55px;
+        bottom: 60px;
         text-align: center;
     }
     
@@ -519,7 +519,8 @@ footer a {
  @media (min-width:769px) {
 
         .main-header{
-            display: block;
+           flex-direction: row;
+           width: 20%;
         }
         .sloganbox{
             display: none;
@@ -545,6 +546,28 @@ footer a {
 
         .search-bar{
             border: #000000 solid 1px;
+        }
+
+        .central-header{
+            display: flex;
+            flex-direction: row;
+            padding-top: 1%;
+        }
+
+        .bottom-header{
+            width: 60%;
+            margin-left: 15rem;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .search{
+            margin-bottom: 0px;
+        }
+
+        .main-header img {
+            width: 250px;
+            height: 75px;
         }
 
 }
