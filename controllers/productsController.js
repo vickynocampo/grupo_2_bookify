@@ -10,7 +10,7 @@ const productsController = {
     // app.post("/productDetail",(req, res)=>{res.redirect("/")});
 
     create: (req, res) => {res.render("productCreate")},
-    edit: (req, res) => {res.render("productEdit")},
+
     getProductById: (req, res) => {
         const bookId = parseInt(req.params.id,10);
         let bookFounded = "";
@@ -20,7 +20,10 @@ const productsController = {
                 res.render("productDetail", {book: bookFounded})
             } 
         }
-    }
+    },
+
+    edit: (req, res) => {res.render("productEdit")},
+
 }
 
 

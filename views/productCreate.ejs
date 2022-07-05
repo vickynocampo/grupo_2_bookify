@@ -15,72 +15,93 @@
 <body>
 <%- include("./partials/header.ejs") %>
 <main>
-<form class="generalForm" method="POST">
-    <div class="title">
-        <h2>Cargar Libro</h2>
-    </div>
-    <div class="formContent">
-    <label name="name">
-        <p>Nombre</p>
-        <input type="text" class="generalinput" name="name">
-    </label>
-    <label name="price">
-        <p>Precio</p>
-        <input type="text" class="generalinput" name="price">
-    </label>
-    <label name="stock">
-        <p>Stock Inicial</p>
-        <input type="text" class="generalinput" name="stock">
-    </label>
-    <label name="front">
-        <p>Portada</p>
-        <input type="file" class="inputFile" name="front">
-    </label>
-    <label name="editorial">
-        <p>Stock Inicial</p>
-        <input type="text" class="generalinput" name="editorial">
-    </label>
-    <label name="autor">
-        <p>Autor</p>
-        <input type="text" class="generalinput" name="autor">
-    </label>
-    <label name="date">
-        <p>Fecha de Publicación</p>
-        <input type="date" class="generalinput" name="autor">
-    </label>
-    <div class="format">
-        <p>Formato</p>
-        <!-- VER LUEGO FUNCIONAMIENTO DE ESTO -->
-        <label name="book" value="format">
-            <p id="option">
-            <input type="radio" > Fisico
-            </p>
+    <form class="generalForm" method="POST">
+        <div class="title">
+            <h2>Cargar Libro</h2>
+        </div>
+        <div class="formContent">
+        <label name="title">
+            <p>Titulo</p>
+            <input type="text" class="generalinput" name="title">
         </label>
-        <label name="Digibook"  value="format">
-            <p id="option">
-            <input type="radio"> Digital
-            </p>
+        <label name="price">
+            <p>Precio</p>
+            <input type="text" class="generalinput" name="price">
         </label>
-    </div>
-    <p>Categoría</p>
-    <select name="category">
-        <option value="0">Categoría 1</option>
-        <option value="1">Categoría 2</option>
-        <option value="2">Categoría 3</option>
-        <option value="3">Categoría 4</option>
-    </select>
-    <label name="description">
-        <p>Descripción</p>
-        <textarea class="inputTextarea"></textarea>
-    </label>
-    <div class="buttoms">
-            <input type="submit" class="formButtom" value="Cargar Libro" class="boton-enviar">
-            <input type="reset" class="formButtom" value="Limpiar" class="boton-enviar">
-    </div>
-
-    </div>
-</form>
-</main>
+        <label name="stock">
+            <p>Stock</p>
+            <input type="text" class="generalinput" name="stock">
+        </label>
+        <label name="front">
+            <p>Portada</p>
+            <input type="file" class="inputFile" name="front">
+        </label>
+        <label name="editorial">
+            <p>Stock Inicial</p>
+            <input type="text" class="generalinput" name="editorial">
+        </label>
+        <label name="autor">
+            <p>Autor</p>
+            <input type="text" class="generalinput" name="autor">
+        </label>
+        <label name="isbn">
+            <p>ISBN</p>
+            <input type="text" class="generalinput" name="isbn">
+        </label>
+        <label name="pages">
+            <p>Lenguaje</p>
+            <input type="text" class="generalinput" name="lenguage">
+        </label>
+        <label name="peso">
+            <p>Peso</p>
+            <input type="text" class="generalinput" name="peso">
+        </label>
+    
+        <label name="lenguage">
+            <p>Número de Páginas</p>
+            <input type="text" class="generalinput" name="pages">
+        </label>
+        <label name="date">
+            <p>Año de Publicación</p>
+            <input type="text" class="generalinput" name="autor">
+        </label>
+        <div class="format">
+            <p>Formato</p>
+            <!-- VER LUEGO FUNCIONAMIENTO DE ESTO -->
+            <label name="book" value="format">
+                <p id="option">
+                <input type="radio" > Fisico
+                </p>
+            </label>
+            <label name="Digibook"  value="format">
+                <p id="option">
+                <input type="radio"> Digital
+                </p>
+            </label>
+        </div>
+        <p>Categoría</p>
+        <select name="category">
+            <option value="">Seleccionar Categoría</option>
+            <option value="1">Novela</option>
+            <option value="2">Cuento</option>
+            <option value="3">Poesías</option>
+            <option value="4">Narrativa</option>
+            <option value="5">Historia</option>
+            <option value="6">Educación</option>
+            <option value="7">Arte</option>
+            <option value="8">Comic</option>
+        </select>
+        <label name="sinopsis">
+            <p>Sinopsis</p>
+            <textarea class="inputTextarea"></textarea>
+        </label>
+        <div class="buttoms">
+                <input type="submit" class="formButtom" value="Cargar Libro" class="boton-enviar">
+                <input type="reset" class="formButtom" value="Eliminar" class="boton-enviar">
+        </div>
+        </div>
+    </form>
+    </main>
 <%- include("./partials/footer.ejs") %>
 </body>
 </html>
