@@ -17,9 +17,14 @@ const productsController = {
         }
         res.render("productDetail", { similar: similares })},
 
+<<<<<<< HEAD
 
     create: (req, res) => { res.render("productCreate") },
     edit: (req, res) => { res.render("productEdit") },
+=======
+    create: (req, res) => {res.render("productCreate")},
+
+>>>>>>> e6e4df76c38c4e867d30d5c3c00a276eb756db47
     getProductById: (req, res) => {
         const bookId = parseInt(req.params.id, 10);
         let bookFounded = "";
@@ -29,7 +34,10 @@ const productsController = {
                 res.render("productDetail", { book: bookFounded })
             }
         }
-    }
+    },
+
+    edit: (req, res) => {res.render("productEdit")},
+
 }
 
 
