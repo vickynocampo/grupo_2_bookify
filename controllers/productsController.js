@@ -9,7 +9,33 @@ const productsController = {
     detail :(req, res)=>{res.render("productDetail")},
     // app.post("/productDetail",(req, res)=>{res.redirect("/")});
 
-    create: (req, res) => {res.render("productCreate")},
+    createView: (req, res) => {
+        res.render("productCreate")
+    },
+
+    createBook: (req, res) => {
+        let newBook = {
+            id: books.length + 1,
+            // bookCategory: ??,
+            // image: ??,
+            title: req.body.title,
+            author: req.body.author,
+            editorial: req.body.editorial,
+            price: req.body.price,
+            discount: req.body.discount,
+            sinopsis: req.body.sinopsis,
+            isbn: req.body.isbn,
+            pages: req.body.pages,
+            lenguage: req.body.lenguage,
+            format: req.body.format,
+            // binding: ??,
+            peso: req.body.peso,
+            published: req.body.published,
+            // category: ??,
+            stock: req.body.stock
+
+        }
+    },
 
     getProductById: (req, res) => {
         const bookId = parseInt(req.params.id,10);

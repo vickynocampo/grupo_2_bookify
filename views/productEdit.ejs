@@ -15,81 +15,95 @@
 <body>
 <%- include("./partials/header.ejs") %>
 <main>
-<form class="generalForm" method="POST">
+<form class="generalForm" acction="/products" method="POST">
     <div class="title">
-        <h2>Editar Libro</h2>
+        <h2>Cargar Libro</h2>
     </div>
     <div class="formContent">
-    <label name="title">
+    <label for="title">
         <p>Titulo</p>
-        <input type="text" class="generalinput" name="title">
+        <input type="text" id="title" class="generalinput" name="title" required>
     </label>
-    <label name="price">
+    <label for="price">
         <p>Precio</p>
-        <input type="text" class="generalinput" name="price">
+        <input type="text" id="price" class="generalinput" name="price">
     </label>
-    <label name="stock">
-        <p>Stock</p>
-        <input type="text" class="generalinput" name="stock">
+    <label for="discount">
+        <p>Descuento</p>
+        <input type="text" id="discount" class="generalinput" name="discount">
     </label>
-    <label name="front">
+    <label for="stock">
+        <p>Stock Inicial</p>
+        <input type="text" id="stock" class="generalinput" name="stock">
+    </label>
+    <label for="front">
         <p>Portada</p>
         <input type="file" class="inputFile" name="front">
     </label>
-    <label name="editorial">
-        <p>Stock Inicial</p>
-        <input type="text" class="generalinput" name="editorial">
+    <label for="editorial">
+        <p>Editorial</p>
+        <input type="text" id="editorial" class="generalinput" name="editorial">
     </label>
     <label name="autor">
         <p>Autor</p>
-        <input type="text" class="generalinput" name="autor">
+        <input type="text" id="autor" class="generalinput" name="autor">
     </label>
     <label name="isbn">
         <p>ISBN</p>
-        <input type="text" class="generalinput" name="isbn">
+        <input type="text" id="isbn" class="generalinput" name="isbn">
     </label>
     <label name="pages">
         <p>Lenguaje</p>
-        <input type="text" class="generalinput" name="lenguage">
+        <input type="text" id="pages" class="generalinput" name="lenguage">
     </label>
     <label name="peso">
         <p>Peso</p>
-        <input type="text" class="generalinput" name="peso">
+        <input type="text" id="peso" class="generalinput" name="peso">
     </label>
 
     <label name="lenguage">
         <p>Número de Páginas</p>
-        <input type="text" class="generalinput" name="pages">
+        <input type="text" id="lenguage" class="generalinput" name="pages">
     </label>
-    <label name="date">
+    <label name="published">
         <p>Año de Publicación</p>
-        <input type="text" class="generalinput" name="autor">
+        <input type="text" id="published" class="generalinput" name="published">
     </label>
     <div class="format">
         <p>Formato</p>
-        <!-- VER LUEGO FUNCIONAMIENTO DE ESTO -->
-        <label name="book" value="format">
-            <p id="option">
-            <input type="radio" > Fisico
-            </p>
+        <label id="option">
+            <input name="format" value="book" type="radio" > Fisico
         </label>
-        <label name="Digibook"  value="format">
-            <p id="option">
-            <input type="radio"> Digital
-            </p>
+        <label id="option">
+            <input type="radio" name="format"  value="digiBook"> Digital
         </label>
     </div>
-    <p>Categoría</p>
-    <select name="category">
+    <div class="binding">
+        <p>Encuadernación</p>
+        <label id="option">
+            <input name="binding" value="hardCover" type="radio" > Tapa Dura
+        </label>
+        <label id="option">
+            <input name="binding"  value="softCover" type="radio"> Tapa Blanda
+        </label>
+    </div>
+    <p>Categoría de Libro</p>
+    <select name="bookCategory">
         <option value="">Seleccionar Categoría</option>
-        <option value="1">Novela</option>
-        <option value="2">Cuento</option>
-        <option value="3">Poesías</option>
-        <option value="4">Narrativa</option>
-        <option value="5">Historia</option>
-        <option value="6">Educación</option>
-        <option value="7">Arte</option>
-        <option value="8">Comic</option>
+        <option value="Novela">Novela</option>
+        <option value="Cuento">Cuento</option>
+        <option value="Poesia">Poesías</option>
+        <option value="Narrativa">Narrativa</option>
+        <option value="Historia">Historia</option>
+        <option value="Educacion">Educación</option>
+        <option value="Arte">Arte</option>
+        <option value="Comic">Comic</option>
+    </select>
+    <p>Categoría de Venta</p>
+    <select name="soldCategory">
+        <option value="">Seleccionar Categoría</option>
+        <option value="Offert">Oferta</option>
+        <option value="New">Novedad</option>
     </select>
     <label name="sinopsis">
         <p>Sinopsis</p>
@@ -97,7 +111,9 @@
     </label>
     <div class="buttoms">
             <input type="submit" class="formButtom" value="Cargar Libro" class="boton-enviar">
-            <input type="reset" class="formButtom" value="Eliminar" class="boton-enviar">
+            <form action="/products/delete/?_method=DELETE" method="POST" style="display: inline-flex">
+                <button type="submit" class="formButtom">Eliminar Libro</button>
+            </form>
     </div>
     </div>
 </form>
