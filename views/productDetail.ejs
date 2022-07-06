@@ -42,12 +42,12 @@
                 <div class="product-main-top-right">
                     <div class=product-title>
                         <h1><%= book.title %></h1>
-                        <h4>Autor: Karl Sagan</h4>
-                        <h4>Editorial:</h4>
+                        <h4>Autor: <%= book.author %></h4>
+                        <h4>Editorial: <%= book.editorial %></h4>
                     </div>
                     <div class="product-shop">
                         <div class="product-price">
-                            <p>$ 3.500,00.-</p>
+                            <p>$ <%= book.price %></p>
                         </div>
                         <div class="quantity-container">
                             <label for="quantity">Cantidad</label>
@@ -59,19 +59,19 @@
                     </div>
                     <div class="product-synposis">
                         <h1>Sinposis:</h1>
-                        <p>Cosmos trata de la ciencia en su contexto humano más amplio y explica cómo la ciencia y la civilización se desarrollan conjuntamente. La obra aborda también el tema de las misiones espaciales destinadas a explorar los planetas más próximos a la Tierra, del origen de la vida, de la muerte del Sol, de la evolución de las galaxias y de los orígenes de la materia, los soles y los mundos, así como también los más recientes descubrimientos sobre la vida fuera de la Tierra. Basado en un programa que el profesor Carl Sagan realizó para la televisión y con más de doscientas cincuenta ilustraciones a todo color verdaderamente asombrosas, Cosmos está narrado con la proverbial habilidad de su autor para conseguir que las ideas científicas fuesen comprensibles y apasionantes.
+                        <p> <%= book.sinopsis %>
                         </p>
                     </div>
                     <div class="product-aditional-info">
                         <h3>Informacion Adicional:</h3>
-                        <h4 id="">Editorial:</h4>
-                        <h4 id="">ISBN:</h4>
-                        <h4 id="">Nro. de Páginas:</h4>
-                        <h4 id="">Idioma:</h4>
-                        <h4 id="">Formato:</h4>
-                        <h4 id="">Encuadernación:</h4>
-                        <h4 id="">Clasificación:</h4>
-                        <h4 id="">Fecha Publicación:</h4>
+                        <h4 id="">Editorial: <%= book.editorial %></h4>
+                        <h4 id="">ISBN: <%= book.ISBN %></h4>
+                        <h4 id="">Nro. de Páginas: <%= book.pages %></h4>
+                        <h4 id="">Idioma: <%= book.language %></h4>
+                        <h4 id="">Formato: <%= book.format %></h4>
+                        <h4 id="">Encuadernación: <%= book.binding %><h4>
+                        <h4 id="">Peso: <%= book.peso %></h4>
+                        <h4 id="">Fecha Publicación: <%= book.published %> </h4>
                     </div>
                 </div>
             </div>
@@ -80,37 +80,39 @@
                     <h3>Titulos Similares:</h3>
                 </div>
                 <div class="similar-products">
+                    <a href="/product/<%= book.id %>">
                     <div class="other-products">
                         <div class="img-other-products">
-                            <img src="/img/universo2.png" alt="Universo 2">
+                            <img src="/img/<%= book.image %>" alt="Universo 2">
                         </div>
-                        <div class="other-products-price">
-                              <a href="#">Comprar</a>
-                        </div>
+                      <!--<div class="other-products-price">
+                            <a href="#">Comprar</a>
+                        </div>-->
                     </div>
+                    </a>
                     <div class="other-products">
                         <div class="img-other-products">
                             <img src="/img/universo.png" alt="Universo">
                         </div>
-                        <div class="other-products-price">
+                        <!--<div class="other-products-price">
                             <a href="#">Comprar</a>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="other-products">
                         <div class="img-other-products">
                             <img src="/img/universo3.png" alt="Universo 3">
                         </div>
-                        <div class="other-products-price">
+                      <!--<div class="other-products-price">
                             <a href="#">Comprar</a>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="other-products">
                         <div class="img-other-products">
                             <img src="/img/universo4.png" alt="Universo 4">
                         </div>
-                        <div class="other-products-price">
+                       <!--<div class="other-products-price">
                             <a href="#">Comprar</a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
