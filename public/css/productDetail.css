@@ -193,23 +193,25 @@ main .img-media img {
     margin: 15px auto;
 }
 
+
 .other-products {
-    width: 60%; 
+    width: 60%;
     height: 100%;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+
 }
 
 .img-other-products {
     width: 100%;
-    height: 100%;
+    height:220px;
 }
 
 .other-products img {
-    width: 100%;
+    width: 160px;
     height: 100%;
     border-radius: 15px;
 }
@@ -228,9 +230,13 @@ main .img-media img {
 .other-products-price a {
     text-decoration: none;
     font-size: 2rem;
-    color:  #ffffff;
+    color: #ffffff;
     font-weight: bold;
 }
+
+.other-products:hover img {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
 
 @media (min-width:361px) { 
     

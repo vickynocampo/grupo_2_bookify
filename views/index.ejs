@@ -15,57 +15,74 @@
     <link href="/css/normalize.css" rel="stylesheet" />
     <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
+   
+    <script defer src="/js/carrousel.js"></script>
 </head>
+
 <body>
     <%- include("./partials/header.ejs") %>
         <main>
-            <!--<div class="carrousel">
-                <div class="carrousel-main">
-                    <img src="#" alt="Universo 2">
-                    <img src="#" alt="Universo 2">
-                    <img src="#" alt="Universo 2">
-                    <img src="#" alt="Universo 2">
-                </div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>-->
-            <div class="slider">
-                <ul>
-                    <li>
-                        <img src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2017/05/harrypotter.png?fit=950%2C534&ssl=1" alt="imagen de libro">
-                    </li>
-                    <li>
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_608771-MLA45827148278_052021-O.webp" alt="imagen de libro">
-                    </li>
-                    <li>
-                        <img src="https://bibliotecaresumen.com/wp-content/uploads/ANILLOS.jpg" alt="imagen de libro">
-                    </li>
-                    <li>
-                        <img src="https://media.vandal.net/i/620x488/5-2022/20225191044064_1.jpg" alt="imagen de libro">
-                    </li>
-                </ul>
-            </div>
-            <h3>Lo mas visto de la Semana:</h3>
-            <div class="lo-mas-visto">
-                <% books.forEach(function(book){%>
-                    <div class="other-products">
-                        <a href="/product/<%= book.id %>">
+           <div class="carrousel">
+                <ul class="carrousel-slider">
+                    <li id="slide1">
+                        <div class="other-products">
                             <div class="img-other-products">
-                                <img src="/img/<%= book.image %>" alt="Universo 4">
+                                <img src="/img/universo4.png" alt="Universo 4">
                             </div>
+                    </li>
+                    <li id="slide2">
+                        <div class="img-other-products">
+                            <img src="/img/universo.png" alt="Universo 4">
+                        </div>
+                    </li>
+                    <li id="slide3">
+                        <div class="img-other-products">
+                            <img src="/img/universo2.png" alt="Universo 4">
+                        </div>
+                    </li>
+                    <li id="slide4">
+                        <div class="img-other-products">
+                            <img src="/img/universo3.png" alt="Universo 4">
+                        </div>
+                    </li>
+                </ul>
+                <div class="slider-selection">
+                    <ul class="menu-slider">
+                        <li>
+                            <a href="#slide1">1</a>
+                        </li>
+                        <li>
+                            <a href="#slide2">2</a>
+                        </li>
+                        <li>
+                            <a href="#slide3">3</a>
+                        </li>
+                        <li>
+                            <a href="#slide4">4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          
+        </main>
+        <h3>Lo mas visto de la Semana:</h3>
+        <div class="lo-mas-visto">
+            <% books.forEach(function(book){%>
+                <div class="other-products">
+                    <a href="/product/<%= book.id %>">
+                        <div class="img-other-products">
+                            <img src="/img/<%= book.image %>" alt="Universo 4">
+                        </div>
+                        <!--
                             <div class="other-products-price">
                                 <a href="#">Comprar</a>
-                            </div>
-                        </a>
-                    </div>
+                            </div>-->
+                    </a>
+                </div>
                 <% }); %>
-            </div>
+        </div>
         </main>
-    <%- include("./partials/footer.ejs") %>
+        <%- include("./partials/footer.ejs") %>
 </body>
 
 </html>
