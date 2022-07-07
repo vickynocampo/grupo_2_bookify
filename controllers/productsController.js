@@ -46,7 +46,7 @@ const productsController = {
          }
 
         books.push(newBook);
-        let booksJSON = JSON.stringify(books)
+        let booksJSON = JSON.stringify(books, null,4) 
         fs.writeFileSync(booksFilePath, booksJSON)
         res.send("Agregaste un nuevo libro")
     },
