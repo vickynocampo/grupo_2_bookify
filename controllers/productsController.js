@@ -35,7 +35,7 @@ const productsController = {
              sinopsis: req.body.sinopsis,
              isbn: req.body.isbn,
              pages: req.body.pages,
-             lenguage: req.body.lenguage,
+             language: req.body.language,
              format: req.body.format,
              binding: req.body.binding,
              peso: req.body.peso,
@@ -45,9 +45,10 @@ const productsController = {
 
          }
 
-        // books.push(newBook);
-
-        res.send(newBook)
+        books.push(newBook);
+        let booksJSON = JSON.stringify(books)
+        fs.writeFileSync(booksFilePath, booksJSON)
+        res.send("Agregaste un nuevo libro")
     },
 
     getProductById: (req, res) => {
