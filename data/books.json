@@ -402,7 +402,7 @@
     {
         "id": 21,
         "bookCategory": "Cuentos",
-        "image": "/img-books/los lugares.jpg",
+        "image": "/img-books/los lugares.jpeg",
         "title": "Los lugares equivocados",
         "author": "Majo Moirón",
         "editorial": "Rosa Iceberg",
@@ -602,7 +602,7 @@
     {
         "id": 31,
         "bookCategory": "Novela",
-        "image": "/img-books/LosNiños.jpg",
+        "image": "/img-books/LosNiños.jpeg",
         "title": "Los niños",
         "author": "Carolina Sanín",
         "editorial": "Blatt & Ríos",
