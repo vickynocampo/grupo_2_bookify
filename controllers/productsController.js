@@ -6,18 +6,10 @@ const books = JSON.parse(fs.readFileSync(booksFilePath, 'utf-8'));
 
 
 const productsController = {
-    detail: (req, res) => {
-
-        let actualBookCat = req.paramas.id
-        let similares = [];
-        for (let i = 0; i < books.length; i++) {
-            if (books[i].bookCategory === actualBookCat) {
-                enOferta.push(similares[i])
-            }
-        }
-        res.render("productDetail",)
+    list: (req, res) => {
+        res.render("products", {books: books})
     },
-
+    
     createView: (req, res) => {
         res.render("productCreate")
     },
@@ -26,7 +18,7 @@ const productsController = {
          let newBook = {
              id: books.length + 1,
              bookCategory: req.body.bookCategory,
-              //image: ??,
+             image: req.file.filename, 
              title: req.body.title,
              author: req.body.author,
              editorial: req.body.editorial,
@@ -48,7 +40,7 @@ const productsController = {
         books.push(newBook);
         let booksJSON = JSON.stringify(books, null,4) 
         fs.writeFileSync(booksFilePath, booksJSON)
-        res.send("Agregaste un nuevo libro")
+        res.redirect("/product")
     },
 
     getProductById: (req, res) => {
