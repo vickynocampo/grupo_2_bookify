@@ -6,9 +6,11 @@ router.get("/", productsController.detail);
 // router.get("/", (req, res) => {
 //     res.send("Holaa")
 // })
-router.get("/create", productsController.createView);
+
 router.post("/", productsController.createBook);
-router.get("/edit", productsController.edit);
 router.get("/:id", productsController.getProductById)
+router.get("/create", productsController.createView);
+router.get("/:id/edit", productsController.editView);
+
 
 module.exports = router;

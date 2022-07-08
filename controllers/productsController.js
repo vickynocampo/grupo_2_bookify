@@ -62,7 +62,16 @@ const productsController = {
         }
     },
 
-    edit: (req, res) => { res.render("productEdit") },
+    editView: (req, res) => { 
+        let idBook = parseInt(req.params.id, 10);
+        let bookFounded = {};
+        for(let i = 0; i < books.length; i++){
+            if(books[i].id === idBook){
+                bookFounded = books[i]
+                res.render("productEdit", {book: bookFounded})
+            }
+        }
+    },
 
 }
 
