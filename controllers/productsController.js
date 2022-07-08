@@ -18,7 +18,7 @@ const productsController = {
          let newBook = {
              id: books.length + 1,
              bookCategory: req.body.bookCategory,
-             image: req.file.filename, 
+             image: "/img-books/" + req.file.filename, 
              title: req.body.title,
              author: req.body.author,
              editorial: req.body.editorial,

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "bookCategory": "Arte",
-        "image": "/art/arte-contemporaneo.jpg",
+        "image": "/img-books/arte-contemporaneo.jpg",
         "title": "ARTE CONTEMPORANEO EN LA EDUCACION ARTISTICA",
         "author": "V.AA.",
         "editorial": "ENEIDA",
@@ -22,7 +22,7 @@
     {
         "id": 2,
         "bookCategory": "Arte",
-        "image": "/art/arte-moderno.png",
+        "image": "/img-books/arte-moderno.png",
         "title": "ARTE MODERNO Y CONTEMPORANEO",
         "author": "Hodge Susie",
         "editorial": "Blume",
@@ -42,7 +42,7 @@
     {
         "id": 3,
         "bookCategory": "Arte",
-        "image": "/art/teorias-del-arte.png",
+        "image": "/img-books/teorias-del-arte.png",
         "title": "TEORIAS DEL ARTE CONTEMPORANEO",
         "author": "Gonnet",
         "editorial": "N/D",
@@ -62,7 +62,7 @@
     {
         "id": 4,
         "bookCategory": "Arte",
-        "image": "/art/arquitectura-con-madera.png",
+        "image": "/img-books/arquitectura-con-madera.png",
         "title": "ARQUITECTURA CON MADERA",
         "author": "Andreu David",
         "editorial": "Librero",
@@ -82,7 +82,7 @@
     {
         "id": 5,
         "bookCategory": "Arte",
-        "image": "/art/arte-griego-romano.jpg",
+        "image": "/img-books/arte-griego-romano.jpg",
         "title": "ARTE GRIEGO Y ROMANO",
         "author": "WOODFORD, SUSAN",
         "editorial": "Blume",
@@ -102,7 +102,7 @@
     {
         "id": 6,
         "bookCategory": "Arte",
-        "image": "/art/breve-historia-arquitectura.png",
+        "image": "/img-books/breve-historia-arquitectura.png",
         "title": "BREVE HISTORIA DE LA ARQUITECTURA",
         "author": "Hodge Susie",
         "editorial": "Blume",
@@ -122,7 +122,7 @@
     {
         "id": 7,
         "bookCategory": "Arte",
-        "image": "/art/taller-joyeria.jpg",
+        "image": "/img-books/taller-joyeria.jpg",
         "title": "LA PRACTICA EN EL TALLER DE JOYERIA",
         "author": "FRIEDA, MUNRO",
         "editorial": "Prompopress",
@@ -142,7 +142,7 @@
     {
         "id": 8,
         "bookCategory": "Arte",
-        "image": "/art/guitarra.png",
+        "image": "/img-books/guitarra.png",
         "title": "APRENDER A TOCAR LA GUITARRA PASO A PASO (2021)",
         "author": "Aa Vv",
         "editorial": "Blume",
@@ -162,7 +162,7 @@
     {
         "id": 9,
         "bookCategory": "Arte",
-        "image": "/art/frida.png",
+        "image": "/img-books/frida.png",
         "title": "FRIDA KAHLO . LA ARTISTA QUE CONVIRTIO SU OBRA EN ICONO DE LA LUCHA FEME",
         "author": "astellarnau Ariadna",
         "editorial": "RBA Libros",
@@ -182,7 +182,7 @@
     {
         "id": 10,
         "bookCategory": "Arte",
-        "image": "/art/tutankamon.png",
+        "image": "/img-books/tutankamon.png",
         "title": "LOS TESOROS DE TUTANKHAMON",
         "author": "Shaw Garry",
         "editorial": "Blume",
@@ -202,7 +202,7 @@
     {
         "id": 11,
         "bookCategory": "Historia",
-        "image": "/history/antigua-grecia.png",
+        "image": "/img-books/antigua-grecia.png",
         "title": "BREVE HISTORIA DE LA ANTIGUA GRECIA",
         "author": " Minguez Fernandez Dionisio",
         "editorial": "Nowtilus",
@@ -222,7 +222,7 @@
     {
         "id": 12,
         "bookCategory": "Historia",
-        "image": "/history/belgrano.png",
+        "image": "/img-books/belgrano.png",
         "title": "HISTORIA DE BELGRANO Y DE LA INDEPENDENCIA ARGENTINA",
         "author": " Bartolome Mitre",
         "editorial": "El Ateneo",
@@ -242,7 +242,7 @@
     {
         "id": 13,
         "bookCategory": "Historia",
-        "image": "/history/san-martin.png",
+        "image": "/img-books/san-martin.png",
         "title": "LA COMIDA EN LA HISTORIA ARGENTINA",
         "author": "Daniel Balmaceda",
         "editorial": "Sudamericana",
@@ -262,7 +262,7 @@
     {
         "id": 14,
         "bookCategory": "Historia",
-        "image": "/history/masacre.jpg",
+        "image": "/img-books/masacre.jpg",
         "title": "MASACRE EN EL COMEDOR",
         "author": "Ceferina Reato",
         "editorial": "Sudamericana",
@@ -282,7 +282,7 @@
     {
         "id": 15,
         "bookCategory": "Historia",
-        "image": "/history/argentina.png",
+        "image": "/img-books/argentina.png",
         "title": "HISTORIA DE LA ARGENTINA OLVIDADA",
         "author": "Ignacio Montes de Oca",
         "editorial": "Edhasa",
@@ -302,7 +302,7 @@
     {
         "id": 16,
         "bookCategory": "Historia",
-        "image": "/history/pueblo-argentino.png",
+        "image": "/img-books/pueblo-argentino.png",
         "title": "AL GRAN PUEBLO ARGENTINO SALUD",
         "author": "Felipe Pigna",
         "editorial": "Planeta",
@@ -322,7 +322,7 @@
     {
         "id": 17,
         "bookCategory": "Historia",
-        "image": "/history/guerra-mundial.png",
+        "image": "/img-books/guerra-mundial.png",
         "title": "HISTORIA VISUAL DE LA SEGUNDA GUERRA MUNDIAL",
         "author": "Jean Lopez",
         "editorial": "Critica",
@@ -342,7 +342,7 @@
     {
         "id": 18,
         "bookCategory": "Historia",
-        "image": "/history/churchill.png",
+        "image": "/img-books/churchill.png",
         "title": "LA SEGUNDA GUERRA MUNDIAL",
         "author": "Winston Churchill",
         "editorial": "Critica",
@@ -362,7 +362,7 @@
     {
         "id": 19,
         "bookCategory": "Historia",
-        "image": "/history/enrique.png",
+        "image": "/img-books/enrique.png",
         "title": "ENRIQUE VIII",
         "author": "Suhamy Henri",
         "editorial": "El Ateneo",
@@ -382,7 +382,7 @@
     {
         "id": 20,
         "bookCategory": "Historia",
-        "image": "/history/egipto.png",
+        "image": "/img-books/egipto.png",
         "title": "BREVE HISTORIA DEL ANTIGUO EGIPTO",
         "author": "Varas Azael",
         "editorial": "Nowtilus",
@@ -798,5 +798,25 @@
         "published": "2021",
         "category": "en oferta",
         "stock": 4
+    },
+    {
+        "id": 41,
+        "bookCategory": "Historia",
+        "image": "/img-books/libro1657243788591.jpg",
+        "title": "Vicky",
+        "author": "Victoria",
+        "editorial": "Planeta",
+        "price": "25999",
+        "discount": "25",
+        "sinopsis": "Prueba",
+        "isbn": "1234567890",
+        "pages": "1000",
+        "language": "Frances",
+        "format": "Fisico",
+        "binding": "Tapa Dura",
+        "peso": "500",
+        "published": "2022",
+        "category": "New",
+        "stock": "4"
     }
 ]
