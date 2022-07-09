@@ -20,7 +20,6 @@ const upload = multer({storage: storage});
 router.get("/", productsController.list)
 router.get("/create", productsController.createView);
 router.post("/", upload.single("image"), productsController.createBook);
-router.get("/edit", productsController.edit);
 router.get("/:id", productsController.getProductById)
 router.get("/create", productsController.createView);
 router.get("/:id/edit", productsController.editView);

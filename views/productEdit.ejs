@@ -31,7 +31,7 @@
         </label>
         <label name="discount">
             <p>Descuento</p>
-            <input type="number" id="discount" class="generalinput" name="discount" value="<&= book.discount %>">
+            <input type="number" id="discount" class="generalinput" name="discount" value="<%= book.discount %>">
         </label>
         <label name="stock">
             <p>Stock Inicial</p>
@@ -39,6 +39,10 @@
         </label>
         <label name="image">
             <p>Portada</p>
+            <div class="front">
+                <img src="/img/<%= book.image %>">
+            </div>
+            <p id="frontLegend">Si deseas cambiar la portada seleccione un nuevo archivo</p>
             <input type="file" class="inputFile" name="image">
         </label>
         <label name="editorial">
@@ -105,20 +109,24 @@
         <p>Categoría de Libro</p>
         <select name="bookCategory">
             <option value="">Seleccionar Categoría</option>
-            <option value="Novela">Novela</option>
-            <option value="Cuento">Cuento</option>
-            <option value="Poesia">Poesías</option>
-            <option value="Narrativa">Narrativa</option>
-            <option value="Historia">Historia</option>
-            <option value="Educacion">Educación</option>
-            <option value="Arte">Arte</option>
-            <option value="Comic">Comic</option>
+            <% for(let i = 0; i < bookCategories.length; i++){%>
+                <% if(bookCategories[i] === book.bookCategory){ %>
+                    <option value="<%= bookCategories[i] %>" selected > <%= bookCategories[i] %></option>
+                <%} else { %>
+                    <option value="<%= bookCategories[i] %>"> <%= bookCategories[i] %></option>
+                <% } %>
+            <% } %>
         </select>
         <p>Categoría de Venta</p>
         <select name="category">
             <option value="">Seleccionar Categoría</option>
-            <option value="Offert">Oferta</option>
-            <option value="New">Novedad</option>
+            <% for(let i = 0; i < categories.length; i++){ %>
+                <% if(categories[i] === book.category){ %>
+                    <option value="<%= categories[i] %>" selected > <%= categories[i] %></option>
+                <%} else { %>
+                    <option value="<%= categories[i] %>"> <%= categories[i] %></option>
+                <% } %>
+            <% } %>
         </select>
         <label name="sinopsis">
             <p>Sinopsis</p>

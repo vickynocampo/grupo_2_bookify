@@ -46,7 +46,7 @@ const productsController = {
     getProductById: (req, res) => {
         const bookId = parseInt(req.params.id, 10);
         let bookFounded = "";
-        for (let i = 0; i <= books.length; i++) {
+        for (let i = 0; i < books.length; i++) {
             if (books[i].id === bookId) {
                 bookFounded = books[i]
                 res.render("productDetail", { book: bookFounded })
@@ -56,14 +56,19 @@ const productsController = {
 
     editView: (req, res) => { 
         let idBook = parseInt(req.params.id, 10);
+        let bookCategories = ["Novela", "Cuento", "Poesia", "Narrativa", "Historia", "Educación", "Arte", "Comic"]
+        let categories = ["En Oferta", "Novedad"];
         let bookFounded = {};
         for(let i = 0; i < books.length; i++){
             if(books[i].id === idBook){
                 bookFounded = books[i]
-                res.render("productEdit", {book: bookFounded})
+                console.log(bookFounded)
+                res.render("productEdit", {book: bookFounded, bookCategories: bookCategories, categories: categories})
             }
         }
     },
+
+    
 
 }
 

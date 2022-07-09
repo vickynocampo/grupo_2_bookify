@@ -36,7 +36,7 @@
         "binding": "Tapa dura",
         "peso": "1480 gr",
         "published": "2019",
-        "category": "en oferta",
+        "category": "En Oferta",
         "stock": 2
     },
     {
@@ -818,5 +818,25 @@
         "published": "2022",
         "category": "New",
         "stock": "4"
+    },
+    {
+        "id": 42,
+        "bookCategory": "Narrativa",
+        "image": "/img-books/libro1657283884894.jpg",
+        "title": "Game of Thrones",
+        "author": "George R.R. Martin",
+        "editorial": "NPI",
+        "price": "5000",
+        "discount": "10",
+        "sinopsis": "Canciones de Hielo y Fuego part 1",
+        "isbn": "323423434",
+        "pages": "50",
+        "language": "Español",
+        "format": "Fisico",
+        "binding": "Tapa Blanda",
+        "peso": "300",
+        "published": "1995",
+        "category": "Offert",
+        "stock": "10"
     }
 ]
