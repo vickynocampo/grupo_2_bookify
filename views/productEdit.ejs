@@ -16,7 +16,7 @@
 <body>
 <%- include("./partials/header.ejs") %>
 <main>
-    <form class="generalForm" action="/product" method="POST">
+    <form class="generalForm" action="/product/<%= book.id %>?_method=PUT" method="POST">
         <div class="title">
             <h2>Editar Libro</h2>
         </div>
@@ -41,8 +41,8 @@
             <p>Portada</p>
             <div class="front">
                 <img src="/img/<%= book.image %>">
+                <p id="frontLegend">Si deseas cambiar la portada seleccione un nuevo archivo</p>
             </div>
-            <p id="frontLegend">Si deseas cambiar la portada seleccione un nuevo archivo</p>
             <input type="file" class="inputFile" name="image">
         </label>
         <label name="editorial">
@@ -133,12 +133,12 @@
             <textarea class="inputTextarea" name="sinopsis"><%= book.sinopsis %></textarea>
         </label>
     <div class="buttoms">
-            <input type="submit" class="formButtom" value="Cargar Libro" class="boton-enviar">
-            <form action="/products/delete/?_method=DELETE" method="POST" style="display: inline-flex">
-                <button type="submit" class="formButtom">Eliminar Libro</button>
-            </form>
+            <input type="submit" class="formButtom" value="Editar Libro" class="boton-enviar">
     </div>
     </div>
+</form>
+<form class="delete" action="/product/<%= book.id %>?_method=DELETE" method="POST">
+    <button type="submit" class="formButtom">Eliminar Libro</button>
 </form>
 </main>
 <%- include("./partials/footer.ejs") %>

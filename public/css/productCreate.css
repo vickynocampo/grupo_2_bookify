@@ -59,11 +59,16 @@ h2{
     font-size: 1.2rem;
 }
 
+.front{
+    border: #a9a1a1 solid 1px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
 .front img{
     display: flex;
     margin: auto;
     margin-top: 2rem;
-    margin-bottom: 2rem;
     width: 80%;
 }
 
@@ -113,6 +118,12 @@ select{
 
 .formButtom:hover{
     background-color: #03264C;
+}
+
+.delete{
+    display: flex;
+    margin: auto;
+    margin-top: 1.5rem
 }
 
 @media (min-width: 361px){}
