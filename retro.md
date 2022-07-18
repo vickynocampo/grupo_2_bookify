@@ -55,3 +55,20 @@ Creo que tenemos mucho potencial y que estaría bueno intentar lograr un proyect
 
     a - Proponemos durante este sprint 1 o 2 meets adicionales para cerrar el Home y el Carrito.
     b - Agregar una daily de 5 minutos por whatsapp en la que todos participemos. Esto ayudaría a destrabar temas sobre que hacer cuando hay tareas atrasadas o definiciones en general del sitio, como por ejemplo el diseño, las categorías de los libros, etc.
+
+
+== RETRO SPRINT 4 ==
+
+1. ¿Que hicimos bien?
+Se logró llegar a tiempo a cumplir con los requisitos del sprint en tiempo y forma. Gracias a que algunos integrantes del grupo asumieron varias responsabilidades.
+Se pudo completar los pendientes de los sprint anteriores.
+
+2. ¿Que podemos mejorar?
+No logramos distribuir bien las tareas: cuales son y a quien le corresponden.
+necesitamos una mayor comunicación y renovar el interés y la motivación para involucrarnos en modo más equitativo.
+   
+3. ¿Que acciones tomamos para lograr esas mejoras?
+    a. Utilizar los medios de comunicación a disposición para facilitar el trabajo en equipo. No solo para lograr equilibrar las tareas, sino para solicitar ayuda cuando sea necesario y no bloquear el avance, o dejarlo en manos de algunos pocos.
+    b. Optimizar nuestra reunión semanal.
+
+
