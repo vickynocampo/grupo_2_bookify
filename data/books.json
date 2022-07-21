@@ -1238,5 +1238,25 @@
         "published": "2019",
         "category": "Offert",
         "stock": "5"
+    },
+    {
+        "id": 63,
+        "bookCategory": "Novela",
+        "image": "/img-books/libro1658442499445.jpg",
+        "title": "a",
+        "author": "1",
+        "editorial": "1",
+        "price": "1",
+        "discount": "1",
+        "sinopsis": "1",
+        "isbn": "1",
+        "pages": "1",
+        "language": "1",
+        "format": "Fisico",
+        "binding": "Tapa Dura",
+        "peso": "1",
+        "published": "1",
+        "category": "Offert",
+        "stock": "1"
     }
 ]
