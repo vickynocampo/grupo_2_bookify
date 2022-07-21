@@ -9,8 +9,7 @@ const userController = {
     postRegister : (req, res)=>{res.redirect("/")},
     login : (req, res) =>{res.render("login")}, 
     loginPost: (req, res)=>{res.redirect("/")},  
-    editUser: (req, res) => {
-        
+    editUser: (req, res) => {        
         let idUser = parseInt(req.params.id, 10);
         let userFounded = {};
         for (let i = 0; i < users.length; i++) {

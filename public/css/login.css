@@ -95,6 +95,10 @@ main span {
     padding: 0%;
 }
 
+.rememberButton {
+    margin: 10px 0;
+}
+
 @media (min-width: 361px){
     .boton-enviar:hover{
         background-color: #03264C;

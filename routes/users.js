@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-
 const usersController = require("../controllers/usersController");
-
-//router.post("/", userController.postRegister);
+const upload = require("../middlewares/multerUsersMiddleware");
 
 router.get("/register", usersController.register);
+
+/*router.post("/register", upload.single("avatar"), userController.) armar processRegistar*/
 
 router.get("/login", usersController.login);
 
