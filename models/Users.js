@@ -70,15 +70,12 @@ const User = {
     },
 
     editUser: (req, res) => {
-        let idBook = parseInt(req.params.id, 10);
-        let bookCategories = ["Novela", "Cuento", "Poesia", "Narrativa", "Historia", "Educación", "Arte", "Comic"]
-        let categories = ["En Oferta", "Novedad"];
-        let bookFounded = {};
-        for (let i = 0; i < books.length; i++) {
-            if (books[i].id === idBook) {
-                bookFounded = books[i]
-                console.log(bookFounded)
-                res.render("productEdit", { book: bookFounded, bookCategories: bookCategories, categories: categories })
+        let idUser = parseInt(req.params.id, 10);
+        let userFounded = {};
+        for (let i = 0; i < this.allUsers.length; i++) {
+            if (allUsers[i].id === idUser) {
+                userFounded = allUsers[i]
+                res.render("userEdit", { user : userFounded })
             }
         }
     },
