@@ -1,11 +1,12 @@
 [
     {
-        "id":2,
-        "name": "a",
-        "lastName": "b",
-        "birthday": "1",
-        "userName": "1",
-        "email": "1",
-        "password": "1"
+        "id":1,
+        "name": "Eleazar",
+        "lastName": "Salazar",
+        "birthday": "19/10/1993",
+        "userName": "eleSalazar",
+        "email": "eleazar@test.com",
+        "password": "123456",
+        "avatar": "img-avatars/2022-03-10_10h36_02.png"
     }
 ]

@@ -1,25 +1,5 @@
 [
     {
-        "id": 1,
-        "bookCategory": "Arte",
-        "image": "/img-books/arte-contemporaneo.jpg",
-        "title": "ARTE CONTEMPORANEO EN LA EDUCACION ARTISTICA",
-        "author": "V.AA.",
-        "editorial": "ENEIDA",
-        "price": 4520,
-        "discount": 0,
-        "sinopsis": "No disponible",
-        "ISBN": "9788495427380",
-        "pages": "206",
-        "language": "Castellano",
-        "format": "Papel",
-        "binding": "Tapa dura",
-        "peso": "500gr",
-        "published": "12/2019",
-        "category": "en oferta",
-        "stock": 3
-    },
-    {
         "id": 2,
         "bookCategory": "Arte",
         "image": "/img-books/arte-moderno.png",

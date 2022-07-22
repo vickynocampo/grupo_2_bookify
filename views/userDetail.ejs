@@ -11,13 +11,38 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="/css/normalize.css" rel="stylesheet"/>
     <link href="/css/styles.css" rel="stylesheet">
-    <link href="/css/productDetail.css" rel="stylesheet">
+    <link href="/css/userDetail.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
 <%- include("./partials/header.ejs") %>
     <main>
-      Crear Perfil de Usuario
+      <h2>Perfil de Usuario</h2>
+      <div class="userProfile">
+        <div class="content">
+          <div class="profileAvatar">
+            <img src="/img/<%= user.avatar %>" class="avatar">
+          </div>
+          <div class="info">
+            <h3>Nombre de Usuario</h3>
+            <p><%= user.userName %></p>
+            <h3>Nombre</h3>
+            <p><%= user.name %></p>
+            <h3>Apellido</h3>
+            <p><%= user.lastName %></p>
+            <h3>Fecha de Nacimiento</h3>
+            <p><%= user.birthday %></p>
+            <h3>Email</h3>
+            <p><%= user.email %></p>
+            </div>
+        </div>
+      </div>
+      <form class="buttonBox" action="/product/<%= user.id %>?_method=DELETE" method="POST">
+        <a class="button" href="user/<%= user.id %>/edit">
+          Editar Información
+        </a>
+          <button class="button" type="submit">Eliminar Usuario</button>
+      </form>
     </main>
 <%- include("./partials/footer.ejs") %>
 </body>
