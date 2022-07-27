@@ -1,12 +1,16 @@
 [
-    {
-        "id":1,
-        "name": "Eleazar",
-        "lastName": "Salazar",
-        "birthday": "19/10/1993",
-        "userName": "eleSalazar",
-        "email": "eleazar@test.com",
-        "password": "123456",
-        "avatar": "img-avatars/2022-03-10_10h36_02.png"
-    }
+ {
+  "id": 1,
+  "name": "Eleazar",
+  "lastname": "Salazar",
+  "birthday": "1993-10-19",
+  "userName": "EleSalazar1910",
+  "email": "eleazar.salazar@digitalhouse.com",
+  "validate_email": "eleazar.salazar@digitalhouse.com",
+  "password": "$2a$10$7THuY5R3FCzlJq8ckKOfde3MAdHFywSHeQ9ld8WY9l9cUYu5v9Jzy",
+  "confirm_password": "ERS2076",
+  "notifications": "on",
+  "termsAndConditions": "on",
+  "avatar": "img-avatars/user1658955503968.png"
+ }
 ]

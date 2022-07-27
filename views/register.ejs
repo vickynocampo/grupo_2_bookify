@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,86 +8,103 @@
     <title>Register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="/css/normalize.css" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="/css/normalize.css" rel="stylesheet" />
     <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/productCreate.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
+
 <body>
-<%- include("./partials/header.ejs") %>
-    <main>
-        <h2>Crear Cuenta</h2>
-        <form class="generalForm" action="/register" method="POST" enctype="multipart/form-data">
-            <div class="formContent">
-            <h2>Información Personal</h2>
-            <img src="/img/line.png" alt="line" class="login-line">
-            <label name="name">
-                <p>Nombre</p>
-                <input type="text" class="generalinput" name="name">
-            </label>
-            <label name="lastname">
-                <p>Apellido</p>
-                <input type="text" class="generalinput" name="lastname">
-            </label>
-            <label name="birthday">
-                <p>Fecha de Nacimiento</p>
-                <input type="date" class="generalinput" name="birthday">
-            </label>
-            </div>
-        </form>
+    <%- include("./partials/header.ejs") %>
+        <main>
+            <h2>Crear Cuenta</h2>
+            <form method="POST" action="/user/register" enctype="multipart/form-data">
+                <div class="generalForm">
+                    <div class="formContent">
+                        <h2>Información Personal</h2>
+                        <img src="/img/line.png" alt="line" class="login-line">
+                        <label><p>Nombre</p></label>
+                        <input type="text" class="generalinput" name="name">
+                        <label><p>Apellido</p></label>
+                        <input type="text" class="generalinput" name="lastname">
+                        <label><p></p>Fecha de Nacimiento</p></label>
+                        <input type="date" class="generalinput" name="birthday">
+                    </div>
+                </div>
 
-        <form class="generalForm">
-            <div class="formContent">
-            <h2>Información de Cuenta</h2>
-            <img src="/img/line.png" alt="line" class="login-line">
-            <label name="user_name" class="user_name">
-                <p>Nombre de Usuario</p>
-                <input type="text" class="generalinput" name="user_name">
-            </label>
-            <label name="email">
-                <p>Email</p>
-                <input type="email" class="generalinput" name="email">
-            </label>
-            <label name="validate_email">
-                <p>Validar Email</p>
-                <input type="email" class="generalinput" name="validate_email">
-            </label>
-            <label name="password">
-                <p>Contraseña</p>
-                <input type="password" class="generalinput" name="password">
-            </label>
-            <label name="confirm_password">
-                <p>Confirmar Contraseña</p>
-                <input type="password" class="generalinput" name="confirm_password">
-            </label>
-            <label name="avatar">
-                <p>Subir Imagen de Perfil</p>
-                <input type="file" class="inputFile" name="avatar">
-            </label>
+                <div class="generalForm">
+                    <div class="formContent">
+                        <h2>Información de Cuenta</h2>
+                        <img src="/img/line.png" alt="line" class="login-line">
+                        <label><p>Nombre de Usuario</p></label>
+                            <input type="text" class="generalinput" name="userName">
+                            <% if(locals.errors && errors.userName){ %>
+                                <p class="textError">
+                                    <%= errors.userName.msg %>
+                                </p>
+                            <% } %>
+                        <label name="email"><p>Email</p></label>
+                            <input type="email" class="generalinput" name="email">
+                            <% if(locals.errors && errors.email){ %>
+                                <p class="textError">
+                                    <%= errors.email.msg %>
+                                </p>
+                            <% } %>
+                        <label name="validate_email"><p>Confirmar Email</p></label>
+                            <input type="email" class="generalinput" name="validate_email">
+                            <% if(locals.errors && errors.validate_email){ %>
+                                <p class="textError">
+                                    <%= errors.validate_email.msg %>
+                                </p>
+                            <% } %>
+                        <label name="password"><p>Contraseña</p></label>
+                            <input type="password" class="generalinput" name="password">
+                            <% if(locals.errors && errors.password){ %>
+                                <p class="textError">
+                                    <%= errors.password.msg %>
+                                </p>
+                            <% } %>
+                        <label name="confirm_password"><p>Confirmar Contraseña</p></label>
+                            <input type="password" class="generalinput" name="confirm_password">
+                            <% if(locals.errors && errors.confirm_password){ %>
+                                <p class="textError">
+                                    <%= errors.confirm_password.msg %>
+                                </p>
+                            <% } %>
+                        <label name="avatar"><p>Subir Imagen de Perfil</p></label>
+                            <input type="file" class="inputFile" name="avatar">
 
-
-
-            <div class="register_checkbox">
-            <label name="notifications">
-                <p>
-                <input type="checkbox"> Deseo recibir información de las ultimas novedades de Bookify vía email.
-                </p>
-            </label>
-            <label name="termAndConditions">
-                <p>
-                <input type="checkbox"> Declaro estar de acuerdo con los Terminos y Condiciones de Bookify
-                </p>
-            </label>
-            </div>
-            <div class="buttoms">
-                <input type="submit" class="formButtom" value="Registrarse" class="boton-enviar">
-            </div>
-            </div>
-            
-        </form>
-    </main>
-<%- include("./partials/footer.ejs") %>
+                        <div class="register_checkbox">
+                            <label>
+                                <p>
+                                    <input type="checkbox"  name="notifications"> Deseo recibir información de las ultimas novedades de
+                                    Bookify vía email.
+                                </p>
+                            </label>
+                            <label>
+                                <p>
+                                    <input type="checkbox" name="termsAndConditions"> Declaro estar de acuerdo con los Terminos y Condiciones de
+                                    Bookify
+                                </p>
+                            </label>
+                            <% if(locals.errors && errors.termsAndConditions){ %>
+                                <p class="textError">
+                                    <%= errors.termsAndConditions.msg %>
+                                </p>
+                            <% } %>
+                        </div>
+                        <div class="buttoms">
+                            <input type="submit" class="formButtom" value="Registrarse">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <%- include("./partials/footer.ejs") %>
 </body>
+
 </html>

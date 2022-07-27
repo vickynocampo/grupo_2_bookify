@@ -34,11 +34,10 @@ h2{
     margin: auto;
 }
 
-.generalForm p{
-    font-size: 1.4rem;
+.generalForm label{
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(90, 84, 84);
-
 }
 
 #option{
@@ -124,6 +123,10 @@ select{
     display: flex;
     margin: auto;
     margin-top: 1.5rem
+}
+
+.textError{
+    color: red
 }
 
 @media (min-width: 361px){}
