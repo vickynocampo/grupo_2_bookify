@@ -12,6 +12,20 @@
   "notifications": "on",
   "termsAndConditions": "on",
   "avatar": "img-avatars/user1658955503968.png"
+ },
+ {
+  "id": 2,
+  "name": "Victoria",
+  "lastname": "Navarro Ocampo",
+  "birthday": "1979-03-16",
+  "userName": "vickynocampo",
+  "email": "vickynocampo@hotmail.com",
+  "validate_email": "vickynocampo@hotmail.com",
+  "password": "$2a$10$fyCSbItEH8MTe3zPaPpP0ewtpefTNTXlfQI1HxTU44hZ4AzIbmUYy",
+  "confirm_password": "12345678",
+  "notifications": "on",
+  "termsAndConditions": "on",
+  "avatar": "img-avatars/user1659034380678.jpg"
  }
  
 ]

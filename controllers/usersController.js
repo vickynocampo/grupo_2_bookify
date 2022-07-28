@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const {validationResult} = require('express-validator')
-const bcryptjs = require('bcryptjs')
+const bcryptjs = require('bcryptjs');
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -102,7 +102,37 @@ const userController = {
     },
 
     login : (req, res) =>{res.render("login")}, 
-    loginPost: (req, res)=>{res.redirect("/")},  
+
+    loginProcess: (req, res) => {
+
+  
+    let userToLogin = modelUser.findByField("email", req.body.email);
+
+
+    if(userToLogin){
+    let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+
+        if (isOkPassword){
+            return res.redirect("/user/userDetail");
+         } 
+         return res.render("login", {
+            errors: {
+                email: {
+                    msg: "Las credenciales son invalidas"
+                }
+            }
+        });
+    }
+    
+    return res.render("login", {
+        errors: {
+            email: {
+                msg: "El email no se encuentra registrado"
+            }
+        }
+    })
+    },
+
     userDetail: (req, res) => {        
         let idUser = parseInt(req.params.id, 10);
         let userFounded = {};

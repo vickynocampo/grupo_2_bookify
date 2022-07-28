@@ -18,14 +18,18 @@
 <%- include("./partials/header.ejs") %>
     <main>
         <div class="login-box">
-            <form action="/login" method="POST" class="login">
+            <form action="/user/login" method="POST" class="login">
                 <h3>Acceder a Mi Cuenta</h3>
                 <img src="/img/line.png" alt="line" class="login-line">
                 <h5>Gracias por volver a visitarnos. Te pedimos que ingreses tu usuario y contraseña para acceder a tu cuenta.</h5>
-                <p>*Usuario o E-mail</p>
-                <input type="text" name="nombre" placeholder="Nombre de Usuario o email" required class="campo">
+                <p>E-mail</p>
+                <input type="text" name="email" placeholder="Escriba su email" class="campo">
+                <% if(locals.errors && errors.email) { %>
+                    <p class="mensaje-error"><%= errors.email.msg %> </p>   
+                <% } %>
                 <p>*Contraseña</p>
-                <input type="text" name="contraseña" placeholder="Contraseña" required minlength="8" class="campo">
+                <input type="text" name="password" placeholder="Contraseña" class="campo">
+
                 <label for="" class="campo">Recordarme</label>
                 <input type="checkbox" name="rememberMe" class="rememberButton">
                 
