@@ -103,17 +103,28 @@ const userController = {
 
     login : (req, res) =>{res.render("login")}, 
     loginPost: (req, res)=>{res.redirect("/")},  
-    editUser: (req, res) => {        
+    userDetail: (req, res) => {        
         let idUser = parseInt(req.params.id, 10);
         let userFounded = {};
         for (let i = 0; i < users.length; i++) {
             if (users[i].id === idUser) {
                 userFounded = users[i]
-                console.log(userFounded)
                 res.render("userDetail", { user: userFounded })
             }
         }    
-    }
+    },
+
+    editView: (req, res) => {        
+        let idUser = req.params.id;
+        let userFounded = {};
+
+        users.forEach(user => {
+            if(user.id == idUser){
+                userFounded = user
+                res.render("userEdit", { user: userFounded })
+            }
+        })   
+    },
   
 }
 

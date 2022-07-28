@@ -8,7 +8,9 @@ router.get("/register", usersController.registerView);
 
 router.get("/login", usersController.login);
 
-router.get("/:id/detail", usersController.editUser);
+router.get("/:id/detail", usersController.userDetail);
+
+router.get("/:id/edit", usersController.editView);
 
 router.post("/login", usersController.loginPost);
 
