@@ -111,8 +111,9 @@ const userController = {
         if (userToLogin) {
             let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (isOkPassword) {
-                return res.redirect("/user/userDetail");
+                return res.redirect(userToLogin.id + "/detail");
             }
+         
             return res.render("login", { errors: { email: { msg: "Las credenciales son invalidas" } } });
         }
         return res.render("login", { errors: { email: { msg: "El email no se encuentra registrado" } } })
