@@ -11,8 +11,8 @@ router.post("/register", upload.single('avatar'), validations, usersController.r
 
 router.get("/login", usersController.login);
 
-router.post("/login", usersController.loginProcess);
+router.get("/:id/detail", usersController.userDetail);
 
-router.get("/:id/detail", usersController.editUser);
+router.get("/:id/edit", usersController.editView);
 
 module.exports = router;
