@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const {validationResult} = require('express-validator')
+const { validationResult } = require('express-validator')
 const bcryptjs = require('bcryptjs');
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
@@ -10,9 +10,9 @@ const modelUser = require('../models/Users')
 
 const userController = {
 
-    registerView : (req, res) =>{res.render("register")},
-    
-    registerProcess : (req, res)=>{
+    registerView: (req, res) => { res.render("register") },
+
+    registerProcess: (req, res) => {
 
 
         // let validations = validationResult(req)
@@ -23,7 +23,7 @@ const userController = {
 
         let foundByUserName = modelUser.findByField('userName', req.body.userName)
 
-        if(foundByUserName){
+        if (foundByUserName) {
             res.render('register', {
                 errors: {
                     userName: {
@@ -35,39 +35,40 @@ const userController = {
 
         let foundByEmail = modelUser.findByField("email", req.body.email);
 
-        if(foundByEmail){
+        if (foundByEmail) {
             res.render('register', {
                 errors: {
                     email: {
                         msg: "Este email ya se encuentra registrado"
                     }
                 },
-                oldData: req.body})
+                oldData: req.body
+            })
         }
 
-        let emailValidation = function(){
-            if(req.body.email == req.body.validate_email){
+        let emailValidation = function () {
+            if (req.body.email == req.body.validate_email) {
                 return true
             } else {
                 return false
             }
         }
 
-         if(emailValidation == true){
-             res.render('register',{
-                 errors: {
-                     email: {
-                         msg: "Los emails ingresados no coinciden"
-                     },
+        if (emailValidation == true) {
+            res.render('register', {
+                errors: {
+                    email: {
+                        msg: "Los emails ingresados no coinciden"
+                    },
 
-                     validate_email: {
-                         msg: "Los emails ingresados no coinciden"
-                     }
-                 }
-             })
-         }
+                    validate_email: {
+                        msg: "Los emails ingresados no coinciden"
+                    }
+                }
+            })
+        }
 
-        if(req.body.password != req.body.confirm_password){
+        if (req.body.password != req.body.confirm_password) {
             res.render('register', {
                 errors: {
                     password: {
@@ -77,17 +78,19 @@ const userController = {
                         msg: "Las contraseñas no coinciden"
                     }
                 },
-                oldData: req.body})
+                oldData: req.body
+            })
         }
 
-        if(req.body.termsAndConditions != "on"){
+        if (req.body.termsAndConditions != "on") {
             res.render('register', {
                 errors: {
                     termsAndConditions: {
                         msg: "Debes aceptar los terminos y condiciones para poder completar el registro"
                     }
                 },
-                oldData: req.body})
+                oldData: req.body
+            })
         }
 
         let userToCreate = {
@@ -101,39 +104,21 @@ const userController = {
 
     },
 
-    login : (req, res) =>{res.render("login")}, 
+    login: (req, res) => { res.render("login") },
 
     loginProcess: (req, res) => {
-
-  
-    let userToLogin = modelUser.findByField("email", req.body.email);
-
-
-    if(userToLogin){
-    let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-
-        if (isOkPassword){
-            return res.redirect("/user/userDetail");
-         } 
-         return res.render("login", {
-            errors: {
-                email: {
-                    msg: "Las credenciales son invalidas"
-                }
+        let userToLogin = modelUser.findByField("email", req.body.email);
+        if (userToLogin) {
+            let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if (isOkPassword) {
+                return res.redirect("/user/userDetail");
             }
-        });
-    }
-    
-    return res.render("login", {
-        errors: {
-            email: {
-                msg: "El email no se encuentra registrado"
-            }
+            return res.render("login", { errors: { email: { msg: "Las credenciales son invalidas" } } });
         }
-    })
+        return res.render("login", { errors: { email: { msg: "El email no se encuentra registrado" } } })
     },
 
-    editUser: (req, res) => {        
+    editUser: (req, res) => {
         let idUser = parseInt(req.params.id, 10);
         let userFounded = {};
         for (let i = 0; i < users.length; i++) {
@@ -142,9 +127,9 @@ const userController = {
                 console.log(userFounded)
                 res.render("userDetail", { user: userFounded })
             }
-        }    
+        }
     }
-  
+
 }
 
 
