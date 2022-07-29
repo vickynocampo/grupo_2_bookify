@@ -9,7 +9,8 @@ const port = 3030;
 const productRoutes = require("./routes/product");
 const usersRoutes = require("./routes/users");
 const mainRoutes = require("./routes/main");
-const cartRoutes = require("./routes/cart")
+const cartRoutes = require("./routes/cart");
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 
 const publicPath = path.resolve(__dirname, "./public");
 
@@ -18,6 +19,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
+app.use(userLoggedMiddleware);
 app.use(cookies());
 app.use(express.urlencoded({extended:false}));
 app.use(express.static(publicPath));

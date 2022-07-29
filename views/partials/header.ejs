@@ -5,13 +5,16 @@
             <p class="separator-contact">|</p>
             <a href="#">Ayuda</a>
         </nav>
-        <nav class="account">
-            <img src="/img/" class="avatar">
+        <nav class="account">                          
+            <% if(locals.isLogged){ %>
+            <img src="/img/<%= locals.usuarioLogueado.avatar %>" class="avatar-header" width="30px" height="30px">
+            <a href="#"><%= locals.usuarioLogueado.name %></a>
+            <a href="/user/logout">Logout</a>
+            <% } else { %>
             <a href="/user/register">Crear cuenta</a>
             <p class="separator-account">|</p>
             <a href="/user/login">Mi cuenta</a>
-            <a href="#">Hola</a>
-            <a href="/user/logout">Logout</a>
+            <% } %>
         </nav>
     </div>
     <div class="central-header">
