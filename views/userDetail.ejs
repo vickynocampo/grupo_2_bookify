@@ -17,13 +17,14 @@
 <body>
 <%- include("./partials/header.ejs") %>
     <main>
-      <h2>Perfil de Usuario</h2>
+
       <div class="userProfile">
         <div class="content">
           <div class="profileAvatar">
             <img src="/img/<%= user.avatar %>" class="avatar">
           </div>
           <div class="info">
+            <h2>Perfil de Usuario</h2>
             <h3>Nombre de Usuario</h3>
             <p><%= user.userName %></p>
             <h3>Nombre</h3>
@@ -37,12 +38,13 @@
             </div>
         </div>
       </div>
-      <form class="buttonBox" action="/product/<%= user.id %>?_method=DELETE" method="POST">
-        <a class="button" href="user/<%= user.id %>/edit">
-          Editar Información
-        </a>
-          <button class="button" type="submit">Eliminar Usuario</button>
+      <form class="buttonBox" action="/user/<%= user.id %>/edit" method="GET">
+          <button class="button" type="submit">Editar Usuario</button>
+         
       </form>
+      <form class="buttonBox" action="/user/<%= user.id %>/delete?_method=DELETE" method="POST">
+        <button class="button" type="submit">Eliminar Usuario</button>
+    </form>
     </main>
 <%- include("./partials/footer.ejs") %>
 </body>

@@ -1,31 +1,14 @@
 [
  {
   "id": 1,
-  "name": "Eleazar",
-  "lastname": "Salazar",
-  "birthday": "1993-10-19",
-  "userName": "EleSalazar1910",
-  "email": "eleazar.salazar@digitalhouse.com",
-  "validate_email": "eleazar.salazar@digitalhouse.com",
-  "password": "$2a$10$7THuY5R3FCzlJq8ckKOfde3MAdHFywSHeQ9ld8WY9l9cUYu5v9Jzy",
-  "confirm_password": "ERS2076",
-  "notifications": "on",
-  "termsAndConditions": "on",
-  "avatar": "img-avatars/user1658955503968.png"
- },
- {
-  "id": 2,
   "name": "Victoria",
   "lastname": "Navarro Ocampo",
   "birthday": "1979-03-16",
-  "userName": "vickynocampo",
+  "userName": "vickyno",
   "email": "vickynocampo@hotmail.com",
-  "validate_email": "vickynocampo@hotmail.com",
-  "password": "$2a$10$fyCSbItEH8MTe3zPaPpP0ewtpefTNTXlfQI1HxTU44hZ4AzIbmUYy",
+  "password": "$2a$10$N3ASQGOXbwCKLu.v9JL4tul3ZN77is.5.ZBz5wzaGM60IumeV0NYS",
   "confirm_password": "12345678",
-  "notifications": "on",
   "termsAndConditions": "on",
-  "avatar": "img-avatars/user1659034380678.jpg"
+  "avatar": "img-avatars/user1659059826682.jpg"
  }
- 
 ]

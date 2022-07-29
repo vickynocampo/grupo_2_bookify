@@ -25,7 +25,7 @@
                 <p>E-mail</p>
                 <input type="text" name="email" placeholder="Escriba su email" class="campo">
                 <% if(locals.errors && errors.email) { %>
-                    <p class="mensaje-error"><%= errors.email.msg %> </p>   
+                    <p class="textError"><%= errors.email.msg %> </p>   
                 <% } %>
                 <p>*Contraseña</p>
                 <input type="text" name="password" placeholder="Contraseña" class="campo">

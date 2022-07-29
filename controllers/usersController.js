@@ -5,7 +5,8 @@ const bcryptjs = require('bcryptjs');
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-const modelUser = require('../models/Users')
+const modelUser = require('../models/Users');
+const { Console } = require('console');
 
 
 const userController = {
@@ -13,16 +14,14 @@ const userController = {
     registerView: (req, res) => { res.render("register") },
 
     registerProcess: (req, res) => {
-
-
-        // let validations = validationResult(req)
-        // res.render(req.body)
-        // if(validations.errors.length > 0){
-        //     res.render('register', {errors : validations.mapped(), oldData : req.body})
-        // }
-
+       const validations = validationResult(req);
+       if(validations.errors.length > 0){
+           return res.render('register', {
+            errors : validations.mapped(),
+            OldData: req.body        
+        });
+        }
         let foundByUserName = modelUser.findByField('userName', req.body.userName)
-
         if (foundByUserName) {
             res.render('register', {
                 errors: {
@@ -32,9 +31,7 @@ const userController = {
                 }
             })
         }
-
         let foundByEmail = modelUser.findByField("email", req.body.email);
-
         if (foundByEmail) {
             res.render('register', {
                 errors: {
@@ -45,7 +42,6 @@ const userController = {
                 oldData: req.body
             })
         }
-
         let emailValidation = function () {
             if (req.body.email == req.body.validate_email) {
                 return true
@@ -53,7 +49,6 @@ const userController = {
                 return false
             }
         }
-
         if (emailValidation == true) {
             res.render('register', {
                 errors: {
@@ -67,7 +62,6 @@ const userController = {
                 }
             })
         }
-
         if (req.body.password != req.body.confirm_password) {
             res.render('register', {
                 errors: {
@@ -81,7 +75,6 @@ const userController = {
                 oldData: req.body
             })
         }
-
         if (req.body.termsAndConditions != "on") {
             res.render('register', {
                 errors: {
@@ -92,40 +85,43 @@ const userController = {
                 oldData: req.body
             })
         }
-
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
             avatar: "img-avatars/" + req.file.filename,
         }
-
         modelUser.create(userToCreate)
         res.redirect('/')
-
     },
 
-    login: (req, res) => { res.render("login") },
+    login: (req, res) => {res.render("login") },
 
     loginProcess: (req, res) => {
         let userToLogin = modelUser.findByField("email", req.body.email);
         if (userToLogin) {
             let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (isOkPassword) {
+                //Si es correcto vamos a querer usar session para guardar la sesion del usuario, pero antes borramos la password por seguridad:
+                delete userToLogin.password;
+                delete userToLogin.confirm_password
+                req.session.usuarioLogueado = userToLogin;
                 return res.redirect(userToLogin.id + "/detail");
-            }
-         
+            }         
             return res.render("login", { errors: { email: { msg: "Las credenciales son invalidas" } } });
         }
         return res.render("login", { errors: { email: { msg: "El email no se encuentra registrado" } } })
     },
 
-    userDetail: (req, res) => {        
+    userDetail: (req, res) => {       
         let idUser = parseInt(req.params.id, 10);
         let userFounded = {};
         for (let i = 0; i < users.length; i++) {
             if (users[i].id === idUser) {
                 userFounded = users[i]
-                res.render("userDetail", { user: userFounded })
+                res.render("userDetail", { 
+                    user: userFounded,
+                    userLoggged: req.session.usuarioLogueado 
+                })
             }
         }    
     },
@@ -133,7 +129,6 @@ const userController = {
     editView: (req, res) => {        
         let idUser = req.params.id;
         let userFounded = {};
-
         users.forEach(user => {
             if(user.id == idUser){
                 userFounded = user
@@ -141,8 +136,18 @@ const userController = {
             }
         })   
     },
-  
-}
 
+    delete: (req, res) => {
+        let idUser = req.params.id;
+        modelUser.delete(idUser)
+        res.send("Se elimino el usuario " + idUser)
+    },
+
+    logout: (req,res) =>{
+        req.session.destroy();
+        console.log(req.session);
+        res.redirect("/");
+    }
+ }
 
 module.exports = userController;

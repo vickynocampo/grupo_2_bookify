@@ -94,7 +94,7 @@ main span {
     margin: auto;
     padding: 0%;
 }
-.mensaje-error {
+.textError {
     color: tomato;
     font-weight: bold;
     font-size: 1.4em;

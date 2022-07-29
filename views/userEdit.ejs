@@ -21,12 +21,11 @@
 <body>
     <%- include("./partials/header.ejs") %>
         <main>
-            <h2>Editar información del usuario <%= user.userName %></h2>
-            <form method="POST" action="/user/register" enctype="multipart/form-data">
+           <form method="POST" action="/user/register" enctype="multipart/form-data">
 
                 <div class="generalForm">
                     <div class="formContent">
-                        <h2>Información de Cuenta</h2>
+                        <h2>Información de Cuenta <%= user.userName %></h2>
                         <img src="/img/line.png" alt="line" class="login-line">
                         <label><p>Nombre de Usuario</p></label>
                             <p class="textError">Si quieres cambiar tu nombre de usuario recuerda que el mismo debe estar disponible</p>
@@ -72,7 +71,7 @@
                         </div>
                             <input type="file" class="inputFile" name="avatar">                        
                         <div class="buttoms">
-                            <input type="submit" class="formButtom" value="Registrarse">
+                            <input type="submit" class="formButtom" value="Guardar Cambios">
                         </div>
                     </div>
                 </div>
