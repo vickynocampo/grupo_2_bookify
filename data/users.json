@@ -12,5 +12,19 @@
   "notifications": "on",
   "termsAndConditions": "on",
   "avatar": "img-avatars/user1658955503968.png"
+ },
+ {
+  "id": 2,
+  "name": "Sebastián",
+  "lastname": "Bente",
+  "birthday": "1980-11-15",
+  "userName": "Sebas",
+  "email": "sebasbentedg@gmail.com",
+  "validate_email": "sebasbentedg@gmail.com",
+  "password": "$2a$10$.CC8HGH88rAw2unHWQGuAeeJrVh.ulaIJbJ8cfYs5P4pC4AMxPm4e",
+  "confirm_password": "cursoDH",
+  "notifications": "on",
+  "termsAndConditions": "on",
+  "avatar": "img-avatars/user1659035876571.jpeg"
  }
 ]
