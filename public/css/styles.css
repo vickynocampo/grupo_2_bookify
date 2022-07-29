@@ -34,6 +34,16 @@ header {
     justify-content: flex-end;
 }
 
+.textError {
+    color: tomato;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.avatar-header {
+    border-radius: 50%;
+}
+
 .contact, .account {
     margin: 5px 10px 0 0;
     font-weight: bold;

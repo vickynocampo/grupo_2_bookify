@@ -94,6 +94,11 @@ main span {
     margin: auto;
     padding: 0%;
 }
+.textError {
+    color: tomato;
+    font-weight: bold;
+    font-size: 1.4em;
+}
 
 .rememberButton {
     margin: 10px 0;

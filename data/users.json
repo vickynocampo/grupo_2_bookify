@@ -1,30 +1,26 @@
 [
  {
   "id": 1,
-  "name": "Eleazar",
-  "lastname": "Salazar",
-  "birthday": "1993-10-19",
-  "userName": "EleSalazar1910",
-  "email": "eleazar.salazar@digitalhouse.com",
-  "validate_email": "eleazar.salazar@digitalhouse.com",
-  "password": "$2a$10$7THuY5R3FCzlJq8ckKOfde3MAdHFywSHeQ9ld8WY9l9cUYu5v9Jzy",
-  "confirm_password": "ERS2076",
-  "notifications": "on",
+  "name": "Victoria",
+  "lastname": "Navarro Ocampo",
+  "birthday": "1979-03-16",
+  "userName": "vickyno",
+  "email": "vickynocampo@hotmail.com",
+  "password": "$2a$10$Ua3cc4SAGJSIivA1NoVqx.CpDzKFkelxg0umtMUAEOsIq13iTDGNC",
+  "confirm_password": "12345678",
   "termsAndConditions": "on",
-  "avatar": "img-avatars/user1658955503968.png"
+  "avatar": "img-avatars/user1659065510571.jpg"
  },
  {
   "id": 2,
-  "name": "Sebastián",
-  "lastname": "Bente",
-  "birthday": "1980-11-15",
-  "userName": "Sebas",
-  "email": "sebasbentedg@gmail.com",
-  "validate_email": "sebasbentedg@gmail.com",
-  "password": "$2a$10$.CC8HGH88rAw2unHWQGuAeeJrVh.ulaIJbJ8cfYs5P4pC4AMxPm4e",
-  "confirm_password": "cursoDH",
-  "notifications": "on",
+  "name": "Vict",
+  "lastname": "Navarro Ocampo",
+  "birthday": "1979-03-16",
+  "userName": "vickynocampo",
+  "email": "vickynocampo2022@gmail.com",
+  "password": "$2a$10$i0Y9ag7rECzbKUmsimRVV.VrySuWZLlHLnAP7dWGAB0Kan/2kbhia",
+  "confirm_password": "12345678",
   "termsAndConditions": "on",
-  "avatar": "img-avatars/user1659035876571.jpeg"
+  "avatar": "img-avatars/user1659095750249.jpg"
  }
 ]

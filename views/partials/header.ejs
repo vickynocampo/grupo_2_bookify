@@ -6,27 +6,35 @@
             <a href="#">Ayuda</a>
         </nav>
         <nav class="account">
-            <a href="/user/register">Crear cuenta</a>
-            <p class="separator-account">|</p>
-            <a href="/user/login">Mi cuenta</a>
+            <% if(locals.isLogged){ %>
+                <img src="/img/<%= locals.usuarioLogueado.avatar %>" class="avatar-header" width="30px" height="30px">
+                <a href="#">
+                    <%= locals.usuarioLogueado.name %>
+                </a>
+                <a href="/user/logout">Logout</a>
+                <% } else { %>
+                    <a href="/user/register">Crear cuenta</a>
+                    <p class="separator-account">|</p>
+                    <a href="/user/login">Mi cuenta</a>
+                <% } %>
         </nav>
     </div>
     <div class="central-header">
-    <div class="main-header">
-        <a href="/"><img src="/img/logo.png" alt="logo-bookify"></a>
-        <div class="sloganbox">
-            <p class="slogan">¡Conecta con la lectura!</p>
+        <div class="main-header">
+            <a href="/"><img src="/img/logo.png" alt="logo-bookify"></a>
+            <div class="sloganbox">
+                <p class="slogan">¡Conecta con la lectura!</p>
+            </div>
         </div>
-    </div>
-    <div class="bottom-header">
-        <div class="bm">
-            <i class="bm-icon fas fa-bars fa-2x"></i>
-        </div>
-        <form class="search" action="#" method="GET">
+        <div class="bottom-header">
+            <div class="bm">
+                <i class="bm-icon fas fa-bars fa-2x"></i>
+            </div>
+            <form class="search" action="#" method="GET">
                 <input type="search" class="search-bar" name="terminoBuscado">
                 <button><i class="bs fas fa-search"></i></button>
-        </form>
-    </div>
+            </form>
+        </div>
     </div>
     <div class="header-select">
         <select name="categories">

@@ -1,0 +1,63 @@
+<%- include("./partials/head.ejs") %>
+<body>
+<%- include("./partials/header.ejs") %>
+        <main>
+           <form method="POST" action="/user/register" enctype="multipart/form-data">
+
+                <div class="generalForm">
+                    <div class="formContent">
+                        <h2>Información de Cuenta <%= user.userName %></h2>
+                        <img src="/img/line.png" alt="line" class="login-line">
+                        <label><p>Nombre de Usuario</p></label>
+                            <p class="textError">Si quieres cambiar tu nombre de usuario recuerda que el mismo debe estar disponible</p>
+                            <input type="text" class="generalinput" name="userName" value="<%= user.userName %>">
+                            <% if(locals.errors && errors.userName){ %>
+                                <p class="textError">
+                                    <%= errors.userName.msg %>
+                                </p>
+                            <% } %>
+                        <label name="email"><p>Email</p></label>
+                        <p class="textError">Si quieres cambiar tu email el mismo no debe estar registrado en nuestra página</p>
+                            <input type="email" class="generalinput" name="email">
+                            <% if(locals.errors && errors.email){ %>
+                                <p class="textError">
+                                    <%= errors.email.msg %>
+                                </p>
+                            <% } %>
+                        <label name="validate_email"><p>Confirmar Email</p></label>
+                            <input type="email" class="generalinput" name="validate_email">
+                            <% if(locals.errors && errors.validate_email){ %>
+                                <p class="textError">
+                                    <%= errors.validate_email.msg %>
+                                </p>
+                            <% } %>
+                        <label name="password"><p>Contraseña</p></label>
+                            <input type="password" class="generalinput" name="password" >
+                            <% if(locals.errors && errors.password){ %>
+                                <p class="textError">
+                                    <%= errors.password.msg %>
+                                </p>
+                            <% } %>
+                        <label name="confirm_password"><p>Confirmar Contraseña</p></label>
+                            <input type="password" class="generalinput" name="confirm_password">
+                            <% if(locals.errors && errors.confirm_password){ %>
+                                <p class="textError">
+                                    <%= errors.confirm_password.msg %>
+                                </p>
+                            <% } %>
+                        <label name="avatar"><p>Imagen de Perfil</p></label>
+                        <div class="front">
+                            <img src="/img/<%= user.avatar %>">
+                            <p id="frontLegend">Si deseas cambiar la foto de perfil seleccione un nuevo archivo</p>
+                        </div>
+                            <input type="file" class="inputFile" name="avatar">                        
+                        <div class="buttoms">
+                            <input type="submit" class="formButtom" value="Guardar Cambios">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <%- include("./partials/footer.ejs") %>
+</body>
+</html>

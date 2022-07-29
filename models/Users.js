@@ -83,10 +83,10 @@ const User = {
     delete: function (id) {
         let allUsers = this.findAll();
         //Quiero devolver todos los usuarios menos el del id que llega por parametro
-        let finalUsers = allUsers.filter(oneUser => oneUser.id !== id)
+        let finalUsers = allUsers.filter(oneUser => oneUser.id != id)
         //Luego debo escribir nuevamente el archivo con el nuevo array sin el usuario filtrado:
         fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, " "));
-        return true;
+        return true
     }
 }
 

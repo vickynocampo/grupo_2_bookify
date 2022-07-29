@@ -1,38 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;400&display=swap"
-        rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="/css/normalize.css" rel="stylesheet" />
-    <link href="/css/styles.css" rel="stylesheet">
-    <link href="/css/productCreate.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-</head>
-
+<%- include("./partials/head.ejs") %>
 <body>
-    <%- include("./partials/header.ejs") %>
+<%- include("./partials/header.ejs") %>
         <main>
-            <h2>Crear Cuenta</h2>
             <form method="POST" action="/user/register" enctype="multipart/form-data">
                 <div class="generalForm">
                     <div class="formContent">
-                        <h2>Información Personal</h2>
+                        <h2>Ingresá tus datos</h2>
                         <img src="/img/line.png" alt="line" class="login-line">
                         <label><p>Nombre</p></label>
-                        <input type="text" class="generalinput" name="name">
+                        <input type="text" class="generalinput" name="name"  value="<%= locals.OldData ? OldData.name : null %>">
+                        <% if(locals.errors && errors.name){ %>
+                            <p class="textError">
+                                <%= errors.name.msg %>
+                            </p>
+                        <% } %>
+
+
                         <label><p>Apellido</p></label>
-                        <input type="text" class="generalinput" name="lastname">
+                        <input type="text" class="generalinput" name="lastname" value="<%= locals.OldData ? OldData.lastname : null %>">
+                        <% if(locals.errors && errors.lastname){ %>
+                            <p class="textError">
+                        <%= errors.lastname.msg %>
+                            </p>
+                        <% } %>
+                        
                         <label><p></p>Fecha de Nacimiento</p></label>
-                        <input type="date" class="generalinput" name="birthday">
+                        <input type="date" class="generalinput" name="birthday" value="<%= locals.OldData ? OldData.birthday : null %>">
+                        <% if(locals.errors && errors.birthday){ %>
+                            <p class="textError">
+                                <%= errors.birthday.msg %>
+                            </p>
+                        <% } %>
                     </div>
                 </div>
 
@@ -41,43 +39,42 @@
                         <h2>Información de Cuenta</h2>
                         <img src="/img/line.png" alt="line" class="login-line">
                         <label><p>Nombre de Usuario</p></label>
-                            <input type="text" class="generalinput" name="userName">
+                            <input type="text" class="generalinput" name="userName" value="<%= locals.OldData ? OldData.userName : null %>">
                             <% if(locals.errors && errors.userName){ %>
                                 <p class="textError">
                                     <%= errors.userName.msg %>
                                 </p>
                             <% } %>
                         <label name="email"><p>Email</p></label>
-                            <input type="email" class="generalinput" name="email">
+                            <input type="email" class="generalinput" name="email" value="<%= locals.OldData ? OldData.email : null %>">
                             <% if(locals.errors && errors.email){ %>
                                 <p class="textError">
                                     <%= errors.email.msg %>
                                 </p>
                             <% } %>
-                        <label name="validate_email"><p>Confirmar Email</p></label>
-                            <input type="email" class="generalinput" name="validate_email">
-                            <% if(locals.errors && errors.validate_email){ %>
-                                <p class="textError">
-                                    <%= errors.validate_email.msg %>
-                                </p>
-                            <% } %>
+                       
                         <label name="password"><p>Contraseña</p></label>
-                            <input type="password" class="generalinput" name="password">
+                            <input type="password" class="generalinput" name="password" >
                             <% if(locals.errors && errors.password){ %>
                                 <p class="textError">
                                     <%= errors.password.msg %>
                                 </p>
                             <% } %>
-                        <label name="confirm_password"><p>Confirmar Contraseña</p></label>
+                            <label name="confirm_password"><p>Confirmar Contraseña</p></label>
                             <input type="password" class="generalinput" name="confirm_password">
                             <% if(locals.errors && errors.confirm_password){ %>
                                 <p class="textError">
                                     <%= errors.confirm_password.msg %>
                                 </p>
                             <% } %>
-                        <label name="avatar"><p>Subir Imagen de Perfil</p></label>
-                            <input type="file" class="inputFile" name="avatar">
 
+                            <label name="avatar"><p>Subir Imagen de Perfil</p></label>
+                            <input type="file" class="inputFile" name="avatar"  value="<%= locals.OldData ? OldData.avatar : null %>">>
+                            <% if(locals.errors && errors.avatar){ %>
+                                <p class="textError">
+                                    <%= errors.avatar.msg %>
+                                </p>
+                            <% } %>
                         <div class="register_checkbox">
                             <label>
                                 <p>
@@ -98,7 +95,7 @@
                             <% } %>
                         </div>
                         <div class="buttoms">
-                            <input type="submit" class="formButtom" value="Registrarse">
+                            <input type="submit" class="formButtom" value="Crear Cuenta">
                         </div>
                     </div>
                 </div>
