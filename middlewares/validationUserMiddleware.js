@@ -2,7 +2,6 @@ const {body} = require('express-validator');
 const path = require('path');
 
 const validations = [
-
     body("name").notEmpty().withMessage("Tiene que escribir tu nombre"),
     body("lastname").notEmpty().withMessage("Tiene que escribir tu apellido"),
     body("birthday").notEmpty().withMessage("Tiene que ingresar tu fecha de nacimiento"),

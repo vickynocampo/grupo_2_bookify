@@ -10,5 +10,17 @@
   "confirm_password": "12345678",
   "termsAndConditions": "on",
   "avatar": "img-avatars/user1659065510571.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Vict",
+  "lastname": "Navarro Ocampo",
+  "birthday": "1979-03-16",
+  "userName": "vickynocampo",
+  "email": "vickynocampo2022@gmail.com",
+  "password": "$2a$10$i0Y9ag7rECzbKUmsimRVV.VrySuWZLlHLnAP7dWGAB0Kan/2kbhia",
+  "confirm_password": "12345678",
+  "termsAndConditions": "on",
+  "avatar": "img-avatars/user1659095750249.jpg"
  }
 ]

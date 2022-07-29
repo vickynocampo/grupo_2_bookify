@@ -8,7 +8,6 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const modelUser = require('../models/Users');
 const { Console } = require('console');
 
-
 const userController = {
 
     registerView: (req, res) => {res.render("register")},
