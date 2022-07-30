@@ -22,5 +22,44 @@
   "confirm_password": "12345678",
   "termsAndConditions": "on",
   "avatar": "img-avatars/user1659095750249.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Sebastián",
+  "lastname": "Bente",
+  "birthday": "1980-11-15",
+  "userName": "Sebas",
+  "email": "sebasbentedg@gmail.com",
+  "password": "$2a$10$UVPApEoPxzHiL5O80TgOjOOi4TJunJuKCMF1MwNEN2ePojwrzCi3.",
+  "confirm_password": "12345678",
+  "notifications": "on",
+  "termsAndConditions": "on",
+  "avatar": "img-avatars/user1659129596049.jpg"
+ },
+ {
+  "id": 4,
+  "name": "Carlos",
+  "lastname": "Perez",
+  "birthday": "1990-03-02",
+  "userName": "carlos",
+  "email": "carlos@perez.com",
+  "password": "$2a$10$Sd8UxmVWLAAbzHClvff/gOTqsTkCtWZpx.jo4kl3KniVfxeMGKU46",
+  "confirm_password": "123456789",
+  "notifications": "on",
+  "termsAndConditions": "on",
+  "avatar": "img-avatars/user1659139029733.jpg"
+ },
+ {
+  "id": 5,
+  "name": "pedro",
+  "lastname": "gomez",
+  "birthday": "1975-08-06",
+  "userName": "pedro@gomez.com",
+  "email": "pedro@gomez.com",
+  "password": "$2a$10$vDgobHdIIgFP0OP5650brOn0N9cW0R9fNa1Q8rOeE2iaFbCVBGniC",
+  "confirm_password": "1234567890",
+  "notifications": "on",
+  "termsAndConditions": "on",
+  "avatar": "img-avatars/user1659139343212.jpg"
  }
 ]

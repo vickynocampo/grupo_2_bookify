@@ -103,6 +103,9 @@ const userController = {
                 delete userToLogin.password;
                 delete userToLogin.confirm_password
                 req.session.usuarioLogueado = userToLogin;
+            if(req.body.remember_user) {
+					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+				}
                 return res.redirect(userToLogin.id + "/detail");
             }
             return res.render("login", { errors: { email: { msg: "Las credenciales son invalidas" } } });
@@ -111,6 +114,8 @@ const userController = {
     },
 
     userDetail: (req, res) => {
+        console.log(req.cookies.userEmail);
+
         let idUser = parseInt(req.params.id, 10);
         let userFounded = {};
         for (let i = 0; i < users.length; i++) {
@@ -142,6 +147,7 @@ const userController = {
     },
 
     logout: (req, res) => {
+        res.clearCookie('userEmail');
         req.session.destroy();
         res.redirect("/");
     }

@@ -19,8 +19,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
-app.use(userLoggedMiddleware);
 app.use(cookies());
+app.use(userLoggedMiddleware);
 app.use(express.urlencoded({extended:false}));
 app.use(express.static(publicPath));
 app.use(methodOverride('_method'));
