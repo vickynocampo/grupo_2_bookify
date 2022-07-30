@@ -41,6 +41,7 @@ header {
 }
 
 .avatar-header {
+    display: none;
     border-radius: 50%;
 }
 
@@ -58,14 +59,13 @@ header {
 
 .account {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     height: 30px;;
-
 }    
 
 .separator-account {
-    display: none;
+    display: inline;
     color: #FF7F27;
 }
 
@@ -75,23 +75,13 @@ header {
 }
 
 .main-header {
-    /* Valor anterior:
-    display: flex;
-    flex-direction: column;
-    position: relative; */
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .main-header img {
-    /* Valor anterior:
-    width: 190px;
-    height: 100%;
-    border-radius: 10px;
-    margin-top: 3%;
-    margin-left: 2%;
-    margin-bottom: 2%;*/
+
     width: 190px;
     height:60px;
     border-radius: 10px;
@@ -110,17 +100,6 @@ header {
     animation-direction: reverse;
 }
 
-/* Valor anterior:
-.sloganbox {
-    display: block;
-    font-style: italic;
-    font-weight: bold;
-    color: #FF7F27;
-    font-size: 1.4rem;
-    margin-top: 1%;
-    margin-left: 2%;
-}*/
-
 .sloganbox {
     font-style: italic;
     font-weight: bold;
@@ -132,18 +111,12 @@ header {
 
 .slogan{
     margin: 0px;
-    /* Valor anterior: 
-    margin-bottom: 1rem;*/
 }
 
 .cart {
     position: absolute;
     right: 15px;
     bottom: 30%;
-    /* Valor anterior:
-    position: absolute;
-    right: 10%;
-    bottom: 30%;*/
 }
 
 .cart p{
@@ -151,18 +124,16 @@ header {
 }
 
 .cart-icon { 
-    /* valor anterior: font-size: 3.5rem;*/
+
     font-size: 3rem;
     color: #626161;
 }
 
 .bottom-header {
-    /* Valor anterior: display: flex;
-    padding-bottom: 3%;*/
+
     display: flex;
     margin: 10px;
-    /* Aca estaria bueno poner un color de fondo*/
-    align-items: center;
+   align-items: center;
 }
 
 .bm {
@@ -192,11 +163,7 @@ header {
 }
 
 .search-bar {
-    /* Valor anterior:
-    width: 80%;
-    border: none;
-    border-radius: 5px 0px 0px 5px;
-    padding: 4%;*/
+
     width: 85%;
     height: 32px;
     border-radius: 5px;
@@ -206,13 +173,7 @@ header {
 }
 
 .search button{
-    /* Valor anterior: 
-    border: none;
-    background-color: #FFF;
-    color: #666;
-    border-radius: 0px 5px 5px 0px;
-    padding: 4%;
-    font-size: 12px;*/
+
     border: none;
     color: #FFFFFF;
     border-radius: 0px 5px 5px 0px;
@@ -346,6 +307,12 @@ footer a {
         margin-bottom: 0;
     }
 
+
+    .avatar-header {
+        display: inline;
+        border-radius: 50%;
+    }
+    
     .bm {
         display: none;
     }
@@ -354,7 +321,6 @@ footer a {
         font-size: 1.4rem;
     }
 
-    /*Esto antes no estaba:*/
     .contact, .account {
         margin: 5px 10px 0 0;
         font-weight: bold;
@@ -367,54 +333,29 @@ footer a {
     }
 
     .sloganbox {
-        /* Esto antes no estaba:*/
+
         border: 50%;
         font-size: 1.6rem;
-        /*valor anterior: margin-bottom: 1rem;*/
     }
 
     .sloganbox p {
-        /* Valor anterior
-        font-size: 2.5rem;*/
+
         font-size: 2rem;
     }
 
     .cart-icon {
-        /* Valor anterior:
-        font-size: 5rem;*/
+  
         font-size: 3.5rem
     }
    
-    /*Esto antes no estaba:*/
     .cart {
-        /* Valor anterior:
-        right: 10%;
-        bottom: 0%;*/
-        /* Se agrega/modifica:*/
         position: absolute;
         right: 30px;
         bottom: 60px;
         text-align: center;
     }
     
-    /* Habria que eliminar:
-    .cart p {
-        display: block;
-        font-size: 2rem;
-        text-align: center;
-        margin: 0.2rem;
-        color: rgb(90, 84, 84);
-    }*/
-
-    .main-header img {
-        /* Valor anterior
-        width: 25%;*/
-    }
-
     .bottom-header {
-        /* Valor anterior:
-        padding-bottom: 1%;*/
-        /*Esto antes no estaba:*/
         display: flex;
         background-color: #f1f1f1;
   
@@ -426,12 +367,6 @@ footer a {
        }
 
     .header-select {
-        /* Valor anterior: 
-        display: block;
-        margin-left: 2%;
-        padding-bottom: 1.5rem;
-        font-size: 1.6rem;
-        width: 80%; */
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -440,13 +375,11 @@ footer a {
         width: 100%;
         height: 40px;
         gap:2%;
-        background-color:#626161; /*Esto es nuevo, se puede cambiar*/
+        background-color:#626161; 
     }
 
     .header-select select {
-        /* Valor anterior:
-        padding: 0.5rem;
-        width: 21%;*/
+
         padding: 0.5rem;
         background-color:#626161;
         color: #FFFFFF;
@@ -496,8 +429,7 @@ footer a {
 
     .search button, .search-bar {
         padding: 1rem;
-        /* Valor anterior:  border:rgb(90, 84, 84) solid 2px;*/
-        border: #D9D9D9;/*Esto antes no estaba:*/
+        border: #D9D9D9;
     }
 
     .bs {
@@ -505,7 +437,7 @@ footer a {
     }
 
     .search {
-        /* Valor anterior: margin-left: 2.5rem;*/
+  
         margin-left: 2px;
     }
 
